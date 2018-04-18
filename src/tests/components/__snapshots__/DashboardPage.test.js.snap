@@ -3,5 +3,12 @@
 exports[`should render DashboardPage correctly 1`] = `
 <div>
   Dashboard page content
+  <Link
+    className="button"
+    replace={false}
+    to="/create"
+  >
+    Add Item
+  </Link>
 </div>
 `;
