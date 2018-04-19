@@ -1,23 +1,31 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import ItemListItem from './ItemListItem';
 
 export const ItemList = (props) => (
     <div className="content-container">
         <div className="list-header">
-            <div>Items</div>
+            <Link className="button" to="/create">+ Add Item</Link>
         </div>
         <div className="list-body">
+        <div className="list-item--message">
+                        <span>Items</span>
+                    </div>
         {
             props.items.length === 0 ? (
-                <div className="list-item list-item--message">
+                <div className="list-items list-item--message">
                     <span>No items</span>
                 </div>
             ) : (
-                props.items.map((item) => {
-                return <ItemListItem key={item.id} url={item.images[0].url} />
-            })
-        )
+                <div className="list-items">
+                    {console.log(props.items)}
+                    {
+                        props.items.map((item) => {
+                        return <ItemListItem key={item.id} item={item} />
+                    })}
+                </div>
+            )
         }
         </div>
     </div>

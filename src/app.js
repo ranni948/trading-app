@@ -8,6 +8,7 @@ import { login, logout } from './actions/auth';
 import { NavLink } from 'react-router-dom';
 import 'normalize.css/normalize.css';
 import 'react-dates/lib/css/_datepicker.css';
+import "react-image-gallery/styles/css/image-gallery.css";
 import './styles/styles.scss';
 import { firebase } from './firebase/firebase';
 import LoadingPage from './components/LoadingPage'

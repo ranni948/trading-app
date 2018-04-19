@@ -1,0 +1,14 @@
+.image {
+    width: 75%;
+}
+
+.image-item {
+    display: flex;
+    border: 1px solid darken($off-white, 7%);
+    background: white;
+}
+
+.image-info {
+    width:25%;
+    padding: $m-size;
+}

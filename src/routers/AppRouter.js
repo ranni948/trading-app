@@ -7,6 +7,7 @@ import LoginPage from '../components/LoginPage';
 import NotFoundPage from '../components/NotFoundPage';
 import PrivateRoute from './PrivateRoute';
 import PublicRoute from './PublicRoute';
+import ViewItemPage from '../components/ViewItemPage';
 
 export const history = createHistory();
 
@@ -17,6 +18,7 @@ const AppRouter = () => (
                 <PublicRoute path="/" component={LoginPage} exact={true}/>
                 <PrivateRoute path="/dashboard" component={DashboardPage} />
                 <PrivateRoute path="/create" component={AddItemPage} />
+                <PrivateRoute path="/view/:id" component={ViewItemPage} />
                 <Route component={NotFoundPage} />
             </Switch>
         </div>

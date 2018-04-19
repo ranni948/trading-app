@@ -48,11 +48,8 @@ export default class ItemForm extends React.Component {
         this.setState({isUploading: false});
         console.error(error);
     }
-    handleUploadSuccess = (filename) => {
+    handleUploadSuccess = (filename, task) => {
         this.setState({filename, progress: 100, isUploading: false});
-        // this.setState((prevState) => ({
-        //     images: [...prevState.images, filename] 
-        // }));
         storage.ref('images').child(filename).getDownloadURL().then(url => this.setState((prevState) => ({ 
             images: [...prevState.images, {
                 url
@@ -81,22 +78,30 @@ export default class ItemForm extends React.Component {
                 {
                     this.state.isUploading && <p>Progress: {this.state.progress}</p>
                 }
-                {
-                    this.state.images.map((image, index) => (
-                        <img src={image.url} key={index}/>
-                    ))
-                }
-                <FileUploader
-                    accept="image/*"
-                    name="item"
-                    randomizeFilename
-                    multiple
-                    storageRef={storage.ref('images')}
-                    onUploadStart={this.handleUploadStart}
-                    onUploadError={this.handleUploadError}
-                    onUploadSuccess={this.handleUploadSuccess}
-                    onProgress={this.handleProgress}
-                />
+                <div className="form-image-list">
+                    {
+                        this.state.images.map((image) => (
+                            <div className="form-image-list__item">
+                                <img className="list-item-image" src={image.url} key={image.id} />
+                            </div>
+                        ))
+                    }
+                </div>
+                <label className="form-image">
+                + Add Image(s)
+                    <FileUploader
+                        accept="image/*"
+                        name="item"
+                        hidden
+                        randomizeFilename
+                        multiple
+                        storageRef={storage.ref('images')}
+                        onUploadStart={this.handleUploadStart}
+                        onUploadError={this.handleUploadError}
+                        onUploadSuccess={this.handleUploadSuccess}
+                        onProgress={this.handleProgress}
+                    />
+                </label>
                 {this.state.error && <p className="form__error">{this.state.error}</p>}
                 <input
                     type="text"

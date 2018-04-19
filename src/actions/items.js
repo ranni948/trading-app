@@ -24,6 +24,7 @@ export const startAddItem = (itemData = {}) => {
 
             dispatch(addItem({
                 id: ref.key,
+                userId: uid,
                 ...item
             }));
         });
@@ -47,6 +48,7 @@ export const startSetItems = () => {
                     child1.forEach((childSnapshot) => {
                         items.push({
                             id: childSnapshot.key,
+                            userId: child.key,
                             ...childSnapshot.val()
                         });
                     })
@@ -57,15 +59,18 @@ export const startSetItems = () => {
     };
 };
 
-// database.ref('expenses').on('value', (snapshot) => {
-//     const expenses = [];
-    
-//     snapshot.forEach((childSnapshot) => {
-//         expenses.push({
-//             id: childSnapshot.key,
-//             ...childSnapshot.val()
-//         });
-//     });
+//VIEW_ITEM
+export const viewItem = (item) => ({
+    type: 'VIEW_ITEM',
+    item
+});
 
-//     console.log(expenses);
-// });
+export const startViewItem = (id, uid) => {
+    return (dispatch, getState) => {
+        //const uid = getState().auth.uid;
+        return database.ref(`users/${uid}/expenses/${id}`).once('value').then((snapshot) => {
+            console.log(snapshot.val());
+            dispatch(viewItem(snapshot.val()));
+        });
+    }
+}

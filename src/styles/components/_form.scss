@@ -10,3 +10,18 @@
     font-style: italic;
     margin: 0 0 $m-size 0;
 }
+
+.form-image {
+    cursor: pointer;
+}
+
+.form-image-list {
+    display: flex;
+}
+
+.form-image-list__item {
+    padding: $s-size;
+    > img {
+        border: 1px solid darken($off-white, 7%);
+    }
+}

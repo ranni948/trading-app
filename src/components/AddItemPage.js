@@ -10,7 +10,7 @@ class AddItemPage extends React.Component {
     };
     render() {
         return (
-            <div>
+            <div className="content">
                 <div className="page-header">
                     <div className="content-container">
                     <h1 className="page-header__title">Add Item</h1>

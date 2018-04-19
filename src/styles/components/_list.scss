@@ -1,37 +1,82 @@
 .list-header {
-    background-color: $off-white;
+    // background-color: white;
     border: 1px solid darken($off-white, 7%);
     color: $grey;
     display: flex;
-    justify-content: space-between;
+    //justify-content: space-between;
     padding: $s-size $m-size;
 }
 
 .list-body {
-    margin-bottom: $m-size;
+    // background-color: white;
+    margin: $m-size 0;
+    border: 1px solid darken($off-white, 7%);
+    // border-top: none;
     @media (min-width: $desktop-breakpoint) {
         margin-bottom: $l-size;
     }
 }
 
-.list-item {
-    border: 1px solid darken($off-white, 7%);
+.list-items {
+    //border: 1px solid darken($off-white, 7%);
     border-top: none;
     color: $dark-grey;
     display: flex;
-    flex-direction: column;
-    padding: $s-size;
+    flex-direction: row;
+    flex-flow: row wrap;
+    padding: $xs-size;
     text-decoration: none;
     transition: background .3s ease;
-    &:hover {
-        background: $off-white;
-    }
     @media (min-width: $desktop-breakpoint) {
         align-items: center;
-        flex-direction: row;
         justify-content: space-between;
-        padding: $m-size;
+        flex-direction: row;
+        //padding: $m-size;
     }
+}
+
+.list-item {
+    flex-direction: column;
+    position: relative;
+    >img,div {
+        border: 1px solid darken($off-white, 7%);
+        &:hover {
+            opacity: .8;
+        }
+    }
+    > img {
+        border-bottom: none;
+    }
+    > div {
+        width:100%;
+        border-top: none;
+        font-weight: 600;
+        font-size: $s-size;
+        padding: $xs-size;
+    }
+}
+
+.list-item__price {
+    position: absolute;
+    right: 14rem;
+    top: 17rem;
+    display: block;
+    background: black;
+    color: white;
+    padding: 0.4rem;
+    opacity: .8;
+    border-radius: 3px;
+    font-weight: 300;
+}
+
+.list-item__image {
+    border: 1px solid darken($off-white, 7%);
+}
+
+.list-item-image {
+    object-fit: cover;
+    width:200px;
+    height:200px;
 }
 
 .list-item--message {
