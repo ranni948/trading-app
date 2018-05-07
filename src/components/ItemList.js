@@ -7,6 +7,7 @@ export const ItemList = (props) => (
     <div className="content-container">
         <div className="list-header">
             <Link className="button" to="/create">+ Add Item</Link>
+            <Link className="button" to="/selling">Selling</Link>
         </div>
         <div className="list-body">
         <div className="list-item--message">

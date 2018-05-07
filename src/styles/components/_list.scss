@@ -1,5 +1,5 @@
 .list-header {
-    // background-color: white;
+    background-color: white;
     border: 1px solid darken($off-white, 7%);
     color: $grey;
     display: flex;
@@ -8,13 +8,17 @@
 }
 
 .list-body {
-    // background-color: white;
+    background-color: white;
     margin: $m-size 0;
     border: 1px solid darken($off-white, 7%);
     // border-top: none;
     @media (min-width: $desktop-breakpoint) {
         margin-bottom: $l-size;
     }
+}
+
+.my-list-body {
+    border-bottom: none;
 }
 
 .list-items {
@@ -56,6 +60,42 @@
     }
 }
 
+.my-list-items {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.my-list-item {
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    border-bottom: 1px solid darken($off-white, 7%);
+}
+
+.my-list-item__text {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+}
+
+.my-list-item__content {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-between;
+}
+
+.my-list-item__text-item {
+    font-size: $font-size-small;
+    padding-right: $xs-size;
+}
+
+.my-list-item-price {
+    font-weight: 600;
+    color: $green;
+}
+
 .list-item__price {
     position: absolute;
     right: 14rem;
@@ -77,6 +117,13 @@
     object-fit: cover;
     width:200px;
     height:200px;
+}
+
+.my-list-item-image {
+    object-fit: cover;
+    width:100px;
+    height:100px;
+    margin-right: $m-size;
 }
 
 .list-item--message {

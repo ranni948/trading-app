@@ -31,6 +31,37 @@ export const startAddItem = (itemData = {}) => {
     };
 };
 
+//REMOVE_ITEM
+export const removeItem = ({ id } = {}) => ({
+    type: 'REMOVE_ITEM',
+    id
+});
+
+export const startRemoveItem = ({ id } = {}) => {
+    return (dispatch, getState) => {
+        const uid = getState().auth.uid;
+        return database.ref(`users/${uid}/items/${id}`).remove().then(() => {
+            dispatch(removeItem({ id }));
+        });
+    }
+}
+
+//EDIT_ITEM
+export const editItem = (id, updates) => ({
+    type: 'EDIT_ITEM',
+    id,
+    updates
+});
+
+export const startEditItem = (id, updates) => {
+    return (dispatch, getState) => {
+        const uid = getState().auth.uid;
+        return database.ref(`users/${uid}/items/${id}`).update(updates).then(() => {
+            dispatch(editItem(id, updates));
+        });
+    }
+}
+
 // SET_ITEMS
 export const setItems = (items) => ({
     type: 'SET_ITEMS',
@@ -58,19 +89,3 @@ export const startSetItems = () => {
         });
     };
 };
-
-//VIEW_ITEM
-export const viewItem = (item) => ({
-    type: 'VIEW_ITEM',
-    item
-});
-
-export const startViewItem = (id, uid) => {
-    return (dispatch, getState) => {
-        //const uid = getState().auth.uid;
-        return database.ref(`users/${uid}/expenses/${id}`).once('value').then((snapshot) => {
-            console.log(snapshot.val());
-            dispatch(viewItem(snapshot.val()));
-        });
-    }
-}

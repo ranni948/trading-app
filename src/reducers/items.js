@@ -12,19 +12,19 @@ export default (state = itemsReducerDefaultState, action) => {
             ]
         case 'SET_ITEMS':
             return action.items
-        // case 'REMOVE_EXPENSE':
-        //     return state.filter(({ id }) => id !== action.id)
-        // case 'EDIT_EXPENSE':
-        //     return state.map((expense) => {
-        //         if (expense.id === action.id) {
-        //             return {
-        //                 ...expense,
-        //                 ...action.updates
-        //             }
-        //         } else {
-        //             return expense;
-        //         };
-        //     });
+        case 'REMOVE_ITEM':
+            return state.filter(({ id }) => id !== action.id)
+        case 'EDIT_ITEM':
+            return state.map((item) => {
+                if (item.id === action.id) {
+                    return {
+                        ...item,
+                        ...action.updates
+                    }
+                } else {
+                    return item;
+                };
+            });
         default:
             return state
     }

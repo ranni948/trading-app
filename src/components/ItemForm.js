@@ -52,7 +52,8 @@ export default class ItemForm extends React.Component {
         this.setState({filename, progress: 100, isUploading: false});
         storage.ref('images').child(filename).getDownloadURL().then(url => this.setState((prevState) => ({ 
             images: [...prevState.images, {
-                url
+                url,
+                filename 
             }] 
         })));
     };
