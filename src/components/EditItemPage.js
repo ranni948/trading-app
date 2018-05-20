@@ -1,10 +1,26 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import ItemForm from './ItemForm';
-import { startEditItem } from '../actions/items';  
+import { startEditItem } from '../actions/items';
+import { storage } from '../firebase/firebase';
 
 class EditItemPage extends React.Component {
     onSubmit = (item) => {
+        item.images.map(image => {
+            if (image.deleted) {
+                console.log("Deleted " + image.filename);
+                storage.ref(`images/${image.filename}`).delete().then(() => {
+                    //Do Nothing
+                }).catch((error) => {
+                    console.error(error);
+                    return;
+                });
+            }
+        })
+        item.images = item.images.filter((image) => !image.deleted);
+        item.images.map(image => {
+            console.log("Deleted " + image.filename);
+        });
         this.props.startEditItem(this.props.item.id, item);
         this.props.history.push('/');
     };
@@ -19,6 +35,7 @@ class EditItemPage extends React.Component {
                 <div className="content-container">
                     <ItemForm 
                         item={this.props.item}
+                        operation={true}
                         onSubmit={this.onSubmit}
                     />
                 </div>

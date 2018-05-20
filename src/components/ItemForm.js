@@ -17,7 +17,8 @@ export default class ItemForm extends React.Component {
             filename: '',
             isUploading: false,
             progress: 0,
-            images: props.item ? (props.item.images) : []
+            images: props.item ? (props.item.images) : [],
+            operation: props.operation ? 'edit' : ''
         }
     }
     onDescriptionChange = (e) => {
@@ -53,14 +54,53 @@ export default class ItemForm extends React.Component {
         storage.ref('images').child(filename).getDownloadURL().then(url => this.setState((prevState) => ({ 
             images: [...prevState.images, {
                 url,
-                filename 
+                filename,
+                deleted: false 
             }] 
         })));
     };
+    handleImageDelete = (filename, e) => {
+        e.preventDefault();
+        if (this.state.operation === "edit") {
+            //modify object
+            const indexOfFileToDelete = this.state.images.findIndex(image => image.filename === filename);
+            const imageToModify = this.state.images[indexOfFileToDelete];
+            imageToModify.deleted = true;
+            //replace existing object
+            const originalImagesState = this.state.images;
+            originalImagesState.splice(indexOfFileToDelete, 1, imageToModify)
+            this.setState((prevState) => ({
+                images: originalImagesState
+            }));
+        } else {
+            storage.ref(`images/${filename}`).delete().then(() => {
+                this.setState((prevState) => ({
+                    images: prevState.images.filter((image) => filename !== image.filename)
+                }));
+            }).catch(function(error) {
+                console.error(error);
+            });
+        }
+    }
+    handleImageDeleteUndo = (filename, e) => {
+        e.preventDefault();
+        //modify object
+        const indexOfFileToDelete = this.state.images.findIndex(image => image.filename === filename);
+        const imageToModify = this.state.images[indexOfFileToDelete];
+        imageToModify.deleted = false;
+        //replace existing object
+        const originalImagesState = this.state.images;
+        originalImagesState.splice(indexOfFileToDelete, 1, imageToModify)
+        this.setState((prevState) => ({
+            images: originalImagesState
+        }));
+    }
     onSubmit = (e) => {
         e.preventDefault();
         if (!this.state.title || !this.state.price || !this.state.category || !this.state.location) {
             this.setState(() => ({ error: 'Please provide description and amount' }));
+        } else if (this.state.images.length === 0 || (this.state.images.filter(image => !image.deleted).length === 0)) {
+            this.setState(() => ({ error: 'Please add at least 1 image' }));
         } else {
             this.setState(() => ({ error: '' }));
             this.props.onSubmit({
@@ -81,11 +121,21 @@ export default class ItemForm extends React.Component {
                 }
                 <div className="form-image-list">
                     {
-                        this.state.images.map((image) => (
-                            <div className="form-image-list__item">
-                                <img className="list-item-image" src={image.url} key={image.id} />
-                            </div>
-                        ))
+                        this.state.images.map((image, index) => {
+                            return !image.deleted ? 
+                            (
+                                <div className="form-image-list__item" key={index}>
+                                    <img className="list-item-image" src={image.url} />
+                                    <i className="material-icons button--image" onClick={(e) => this.handleImageDelete(image.filename, e)}>delete</i>
+                                </div>
+                            ) : (
+                                <div className="form-image-list__item" key={index}>
+                                    <img className="list-item-image" src={image.url} />
+                                    <div className="list-item-image list-item-image__deleted"></div>
+                                    <i className="material-icons button--image" onClick={(e) => this.handleImageDeleteUndo(image.filename, e)}>cancel</i>
+                                </div>
+                            )
+                        })
                     }
                 </div>
                 <label className="form-image">

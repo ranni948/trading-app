@@ -5,14 +5,6 @@ import numeral from 'numeral';
 //import ExpenseForm from './ExpenseForm';
 
 export class ViewItemPage extends React.Component {
-    // onSubmit = (expense) => {
-    //     this.props.startEditExpense(this.props.expense.id, expense);
-    //     this.props.history.push('/')
-    // }
-    // onRemove = () => {
-    //     this.props.startRemoveExpense(this.props.expense);
-    //     this.props.history.push('/')
-    // }
     render() {
         const images = [];
         this.props.item.images.map((image) => {

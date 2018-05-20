@@ -1,5 +1,5 @@
 import uuid from 'uuid';
-import database from '../firebase/firebase';
+import database, { storage } from '../firebase/firebase';
 
 //ADD_EXPENSE
 export const addItem = (item) => ({
@@ -40,9 +40,20 @@ export const removeItem = ({ id } = {}) => ({
 export const startRemoveItem = ({ id } = {}) => {
     return (dispatch, getState) => {
         const uid = getState().auth.uid;
-        return database.ref(`users/${uid}/items/${id}`).remove().then(() => {
-            dispatch(removeItem({ id }));
-        });
+        database.ref(`users/${uid}/items/${id}`).once('value').then((snapshot) => {
+            return snapshot.val();
+        }).then((result) => {
+            //delete item from DB first so that any reference to the images is gone, if something
+            //goes wrong with deletinf the images it won;t matter since there is no reference to them anymore
+            database.ref(`users/${uid}/items/${id}`).remove().then(() => {
+                dispatch(removeItem({ id }));
+            }).then(() => {
+                result.images.map((image, index) => {
+                    storage.ref(`images/${image.filename}`).delete();
+                });
+            });
+    
+        }); 
     }
 }
 

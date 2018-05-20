@@ -23,3 +23,11 @@
 .button--secondary {
     background-color: #888888;
 }
+
+.button--image {
+    color: $grey;
+    cursor: pointer;
+    position: absolute;
+    right: $s-size;
+    top: $s-size;
+}

@@ -119,6 +119,14 @@
     height:200px;
 }
 
+.list-item-image__deleted {
+    background: red;
+    left: $s-size;
+    opacity: 0.2;
+    position: absolute;
+    top: $s-size;
+}
+
 .my-list-item-image {
     object-fit: cover;
     width:100px;

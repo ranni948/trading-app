@@ -21,6 +21,7 @@
 
 .form-image-list__item {
     padding: $s-size;
+    position: relative;
     > img {
         border: 1px solid darken($off-white, 7%);
     }
