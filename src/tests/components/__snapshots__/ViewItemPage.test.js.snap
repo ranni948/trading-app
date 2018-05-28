@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ViewItemPage 1`] = `
+<div
+  className="content"
+>
+  <div
+    className="page-header"
+  >
+    <div
+      className="content-container"
+    >
+      <h1
+        className="page-header__title"
+      >
+        Item Details
+      </h1>
+    </div>
+  </div>
+  <div
+    className="content-container"
+  >
+    <div
+      className="image-item"
+    >
+      <div
+        className="image-info"
+      >
+        <p>
+          stereo
+        </p>
+        <p>
+          $810.00
+        </p>
+        <p>
+          like new
+        </p>
+      </div>
+      <div
+        className="image"
+      >
+        <ImageGallery
+          autoPlay={false}
+          disableArrowKeys={false}
+          disableSwipe={false}
+          disableThumbnailScroll={false}
+          flickThreshold={0.4}
+          indexSeparator=" / "
+          infinite={true}
+          items={
+            Array [
+              Object {
+                "original": "222",
+                "thumbnail": "222",
+              },
+              Object {
+                "original": 20202,
+                "thumbnail": 20202,
+              },
+            ]
+          }
+          lazyLoad={false}
+          preventDefaultTouchmoveEvent={false}
+          renderFullscreenButton={[Function]}
+          renderLeftNav={[Function]}
+          renderPlayPauseButton={[Function]}
+          renderRightNav={[Function]}
+          showBullets={true}
+          showFullscreenButton={false}
+          showIndex={false}
+          showNav={true}
+          showPlayButton={false}
+          showThumbnails={false}
+          slideDuration={450}
+          slideInterval={3000}
+          slideOnThumbnailHover={false}
+          startIndex={0}
+          stopPropagation={false}
+          swipeThreshold={30}
+          swipingTransitionDuration={0}
+          thumbnailPosition="bottom"
+          useBrowserFullscreen={true}
+          useTranslate3D={true}
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

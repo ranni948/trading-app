@@ -1,7 +1,7 @@
 import uuid from 'uuid';
 import database, { storage } from '../firebase/firebase';
 
-//ADD_EXPENSE
+//ADD_ITEM
 export const addItem = (item) => ({
     type: 'ADD_ITEM',
     item

@@ -12,3 +12,15 @@
     width:25%;
     padding: $m-size;
 }
+
+.image-profile {
+    background-size: 64px 64px;
+    border-radius: 50%;
+    display: block;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    height: 64px;
+    width: 64px;
+    z-index: 0;
+}

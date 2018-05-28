@@ -8,8 +8,10 @@ export default [{
     images: [{
         id: 1,
         url: '111',
-    }
-    ]
+        filename: 'www.1.com',
+        deleted: false
+    }],
+    userId: 'thisismytestuid'
 }, {
     id: '2',
     title: 'stereo',
@@ -20,10 +22,15 @@ export default [{
     images: [{
         id: 2,
         url: '222',
+        filename: 'www.2.com',
+        deleted: false
     }, {
         id: 20,
-        url: 20202
-    }]
+        url: 20202,
+        filename: 'www.20.com',
+        deleted: false
+    }],
+    userId: 'thisismytestuid'
 }, {
     id: '3',
     title: 'Honda Accord',
@@ -34,5 +41,8 @@ export default [{
     images: [{
         id: 3,
         url: '333',
-    }]
+        filename: 'www.3.com',
+        deleted: false
+    }],
+    userId: 'thisismytestuid'
 }];

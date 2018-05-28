@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ItemListItem 1`] = `
+<NavLink
+  activeClassName="active"
+  ariaCurrent="true"
+  className="list-items list-item"
+  to="/view/1"
+>
+  <img
+    className="list-item-image"
+    src="111"
+  />
+  <span
+    className="list-item__price"
+  >
+    $200.00
+  </span>
+  <div>
+    bike
+  </div>
+</NavLink>
+`;

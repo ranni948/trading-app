@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ViewMyItemsPage 1`] = `
+<div
+  className="content"
+>
+  <div
+    className="content-container"
+  >
+    <div
+      className="list-body my-list-body"
+    >
+      <div
+        className="list-items my-list-items"
+      >
+        <Connect(MyItemListItem)
+          item={
+            Object {
+              "category": "sports",
+              "description": "fancy bike, good condition",
+              "id": "1",
+              "images": Array [
+                Object {
+                  "deleted": false,
+                  "filename": "www.1.com",
+                  "id": 1,
+                  "url": "111",
+                },
+              ],
+              "location": "Sydney",
+              "price": 20000,
+              "title": "bike",
+              "userId": "thisismytestuid",
+            }
+          }
+          key="1"
+        />
+        <Connect(MyItemListItem)
+          item={
+            Object {
+              "category": "electronics",
+              "description": "like new",
+              "id": "2",
+              "images": Array [
+                Object {
+                  "deleted": false,
+                  "filename": "www.2.com",
+                  "id": 2,
+                  "url": "222",
+                },
+                Object {
+                  "deleted": false,
+                  "filename": "www.20.com",
+                  "id": 20,
+                  "url": 20202,
+                },
+              ],
+              "location": "Dunedin",
+              "price": 81000,
+              "title": "stereo",
+              "userId": "thisismytestuid",
+            }
+          }
+          key="2"
+        />
+        <Connect(MyItemListItem)
+          item={
+            Object {
+              "category": "vehicles",
+              "description": "2007 model, runs well",
+              "id": "3",
+              "images": Array [
+                Object {
+                  "deleted": false,
+                  "filename": "www.3.com",
+                  "id": 3,
+                  "url": "333",
+                },
+              ],
+              "location": "Christchurch",
+              "price": 1299999,
+              "title": "Honda Accord",
+              "userId": "thisismytestuid",
+            }
+          }
+          key="3"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should render ViewMyItemsPage with no items 1`] = `
+<div
+  className="content"
+>
+  <div
+    className="content-container"
+  >
+    <div
+      className="list-body my-list-body"
+    >
+      <div
+        className="list-items list-item--message"
+      >
+        <span>
+          No items
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -4,7 +4,7 @@ import ItemForm from './ItemForm';
 import { startEditItem } from '../actions/items';
 import { storage } from '../firebase/firebase';
 
-class EditItemPage extends React.Component {
+export class EditItemPage extends React.Component {
     onSubmit = (item) => {
         item.images.map(image => {
             if (image.deleted) {

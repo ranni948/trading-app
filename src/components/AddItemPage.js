@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import ItemForm from './ItemForm';
 import { startAddItem } from '../actions/items';  
 
-class AddItemPage extends React.Component {
+export class AddItemPage extends React.Component {
     onSubmit = (item) => {
         this.props.startAddItem(item);
         this.props.history.push('/');

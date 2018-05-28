@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render EditItemPage correctly 1`] = `
+<div
+  className="content"
+>
+  <div
+    className="page-header"
+  >
+    <div
+      className="content-container"
+    >
+      <h1
+        className="page-header__title"
+      >
+        Edit Item
+      </h1>
+    </div>
+  </div>
+  <div
+    className="content-container"
+  >
+    <ItemForm
+      item={
+        Object {
+          "category": "electronics",
+          "description": "like new",
+          "id": "2",
+          "images": Array [
+            Object {
+              "deleted": false,
+              "filename": "www.2.com",
+              "id": 2,
+              "url": "222",
+            },
+            Object {
+              "deleted": false,
+              "filename": "www.20.com",
+              "id": 20,
+              "url": 20202,
+            },
+          ],
+          "location": "Dunedin",
+          "price": 81000,
+          "title": "stereo",
+          "userId": "thisismytestuid",
+        }
+      }
+      onSubmit={[Function]}
+      operation={true}
+    />
+  </div>
+</div>
+`;

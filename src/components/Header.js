@@ -3,14 +3,20 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { startLogout } from '../actions/auth';
 
-export const Header =({ startLogout }) => (
+export const Header =(props) => (
     <header className="header">
         <div className="content-container">
             <div className="header__content">
                 <Link className="header__title" to="/dashboard">
-                    <h1>Trading App</h1>
+                    <h1>BarterBro</h1>
                 </Link>
-                <button className="button button--link" onClick={startLogout}>Logout</button>
+                <div className="header__content">
+                    <img className="image-profile"src={props.userPhoto} />
+                    <span className="button button--link">{
+                        props.userName
+                        }</span>
+                    <button className="button button--link" onClick={props.startLogout}>SIGN-OUT</button>
+                </div>
             </div>
         </div>
     </header>
@@ -20,4 +26,11 @@ const mapDispatchToProps = (dispatch) => ({
     startLogout: () => dispatch(startLogout())
 });
 
-export default connect(undefined, mapDispatchToProps)(Header);
+const mapStateToProps = (state) => {
+    return {
+        userPhoto: state.auth.userPhoto,
+        userName: state.auth.userName
+    }
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);

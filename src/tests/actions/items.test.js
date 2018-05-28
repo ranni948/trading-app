@@ -36,7 +36,9 @@ test('should add item to database and store', (done) => {
         category: 'Computers',
         location: 'New Zealand',
         images: [{
-            url: 'asfsdf'
+            url: 'asfsdf',
+            filename: 'www.5.com',
+            disabled: false
         }]
     }
 
@@ -46,6 +48,7 @@ test('should add item to database and store', (done) => {
             type: 'ADD_ITEM',
             item: {
                 id: expect.any(String),
+                userId: uid,
                 ...itemData,
             }
         });
@@ -74,6 +77,7 @@ test('should add item with defaults to database and store', (done) => {
             type: 'ADD_ITEM',
             item: {
                 id: expect.any(String),
+                userId: uid,
                 ...itemData
             }
         });

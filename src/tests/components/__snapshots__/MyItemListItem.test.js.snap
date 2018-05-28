@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render MyItemListItem 1`] = `
+<div
+  className="list-items my-list-item"
+>
+  <NavLink
+    activeClassName="active"
+    ariaCurrent="true"
+    to="/view/1"
+  >
+    <img
+      className="my-list-item-image"
+      src="111"
+    />
+  </NavLink>
+  <div
+    className="my-list-item__content"
+  >
+    <div
+      className="my-list-item__text"
+    >
+      <div
+        className="my-list-item__text-item my-list-item-price"
+      >
+        $200.00
+      </div>
+      <div
+        className="my-list-item__text-item"
+      >
+        -
+      </div>
+      <div
+        className="my-list-item__text-item"
+      >
+        bike
+      </div>
+    </div>
+    <div
+      className="my-list-item__text"
+    >
+      <button
+        className="button button-selling"
+        onClick={[Function]}
+      >
+        Delete
+      </button>
+      <Link
+        className="button button-selling"
+        replace={false}
+        to="/edit/1"
+      >
+        Edit
+      </Link>
+    </div>
+  </div>
+</div>
+`;

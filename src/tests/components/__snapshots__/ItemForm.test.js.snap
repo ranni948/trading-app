@@ -1,0 +1,3393 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ItemForm correctly 1`] = `
+<form
+  className="form"
+  onSubmit={[Function]}
+>
+  <div
+    className="form-image-list"
+  />
+  <label
+    className="form-image"
+  >
+    + Add Image(s)
+    <FirebaseFileUploader
+      accept="image/*"
+      hidden={true}
+      multiple={true}
+      name="item"
+      onProgress={[Function]}
+      onUploadError={[Function]}
+      onUploadStart={[Function]}
+      onUploadSuccess={[Function]}
+      randomizeFilename={true}
+      storageRef={
+        Reference {
+          "authWrapper": AuthWrapper {
+            "app_": FirebaseAppImpl {
+              "INTERNAL": Object {
+                "addAuthTokenListener": [Function],
+                "getToken": [Function],
+                "getUid": [Function],
+                "removeAuthTokenListener": [Function],
+              },
+              "firebase_": Object {
+                "INTERNAL": Object {
+                  "ErrorFactory": [Function],
+                  "Promise": [Function],
+                  "createFirebaseNamespace": [Function],
+                  "createSubscribe": [Function],
+                  "deepExtend": [Function],
+                  "extendNamespace": [Function],
+                  "factories": Object {
+                    "auth": [Function],
+                    "database": [Function],
+                    "storage": [Function],
+                  },
+                  "node": Object {
+                    "XMLHttpRequest": [Function],
+                    "localStorage": Storage {},
+                    "sessionStorage": Storage {},
+                  },
+                  "registerService": [Function],
+                  "removeApp": [Function],
+                  "useAsService": [Function],
+                },
+                "Promise": [Function],
+                "SDK_VERSION": "4.2.0",
+                "User": [Function],
+                "__esModule": true,
+                "app": [Function],
+                "apps": Array [
+                  [Circular],
+                ],
+                "auth": [Function],
+                "database": [Function],
+                "default": [Circular],
+                "initializeApp": [Function],
+                "storage": [Function],
+              },
+              "isDeleted_": false,
+              "name_": "[DEFAULT]",
+              "options_": Object {
+                "apiKey": "AIzaSyAtpT9y22RfEQRF0kugKRuP2ORGNYRQ8W0",
+                "authDomain": "trading-app-test.firebaseapp.com",
+                "databaseURL": "https://trading-app-test.firebaseio.com",
+                "messagingSenderId": "801758573787",
+                "projectId": "trading-app-test",
+                "storageBucket": "trading-app-test.appspot.com",
+              },
+              "services_": Object {
+                "auth": Object {
+                  "[DEFAULT]": Object {
+                    "apiKey": "AIzaSyAtpT9y22RfEQRF0kugKRuP2ORGNYRQ8W0",
+                    "appName": "[DEFAULT]",
+                    "authDomain": "trading-app-test.firebaseapp.com",
+                    "currentUser": null,
+                  },
+                },
+                "database": Object {
+                  "[DEFAULT]": Database {
+                    "INTERNAL": DatabaseInternals {
+                      "database": [Circular],
+                    },
+                    "repo_": Repo {
+                      "__database": [Circular],
+                      "app": [Circular],
+                      "dataUpdateCount": 0,
+                      "eventQueue_": EventQueue {
+                        "eventLists_": Array [],
+                        "recursionDepth_": 0,
+                      },
+                      "infoData_": SnapshotHolder {
+                        "rootNode_": ChildrenNode {
+                          "children_": SortedMap {
+                            "comparator_": [Function],
+                            "root_": LLRBNode {
+                              "color": false,
+                              "key": ".info",
+                              "left": LLRBEmptyNode {},
+                              "right": LLRBEmptyNode {},
+                              "value": ChildrenNode {
+                                "children_": SortedMap {
+                                  "comparator_": [Function],
+                                  "root_": LLRBNode {
+                                    "color": false,
+                                    "key": "connected",
+                                    "left": LLRBEmptyNode {},
+                                    "right": LLRBEmptyNode {},
+                                    "value": LeafNode {
+                                      "lazyHash_": null,
+                                      "priorityNode_": ChildrenNode {
+                                        "children_": SortedMap {
+                                          "comparator_": [Function],
+                                          "root_": LLRBEmptyNode {},
+                                        },
+                                        "indexMap_": IndexMap {
+                                          "indexSet_": Object {
+                                            ".priority": PriorityIndex {},
+                                          },
+                                          "indexes_": Object {
+                                            ".priority": Object {},
+                                          },
+                                        },
+                                        "lazyHash_": null,
+                                        "priorityNode_": null,
+                                      },
+                                      "value_": false,
+                                    },
+                                  },
+                                },
+                                "indexMap_": IndexMap {
+                                  "indexSet_": Object {
+                                    ".priority": PriorityIndex {},
+                                  },
+                                  "indexes_": Object {
+                                    ".priority": Object {},
+                                  },
+                                },
+                                "lazyHash_": null,
+                                "priorityNode_": null,
+                              },
+                            },
+                          },
+                          "indexMap_": IndexMap {
+                            "indexSet_": Object {
+                              ".priority": PriorityIndex {},
+                            },
+                            "indexes_": Object {
+                              ".priority": Object {},
+                            },
+                          },
+                          "lazyHash_": null,
+                          "priorityNode_": null,
+                        },
+                      },
+                      "infoSyncTree_": SyncTree {
+                        "listenProvider_": Object {
+                          "startListening": [Function],
+                          "stopListening": [Function],
+                        },
+                        "pendingWriteTree_": WriteTree {
+                          "allWrites_": Array [],
+                          "lastWriteId_": -1,
+                          "visibleWrites_": CompoundWrite {
+                            "writeTree_": ImmutableTree {
+                              "children": SortedMap {
+                                "comparator_": [Function],
+                                "root_": LLRBEmptyNode {},
+                              },
+                              "value": null,
+                            },
+                          },
+                        },
+                        "queryToTagMap_": Object {},
+                        "syncPointTree_": ImmutableTree {
+                          "children": SortedMap {
+                            "comparator_": [Function],
+                            "root_": LLRBEmptyNode {},
+                          },
+                          "value": null,
+                        },
+                        "tagToQueryMap_": Object {},
+                      },
+                      "interceptServerDataCallback_": null,
+                      "nextWriteId_": 1,
+                      "onDisconnect_": SparseSnapshotTree {
+                        "children_": null,
+                        "value_": null,
+                      },
+                      "persistentConnection_": PersistentConnection {
+                        "authOverride_": undefined,
+                        "authTokenProvider_": AuthTokenProvider {
+                          "app_": [Circular],
+                        },
+                        "authToken_": null,
+                        "connected_": false,
+                        "establishConnectionTimer_": 2,
+                        "firstConnection_": true,
+                        "forceTokenRefresh_": false,
+                        "id": 0,
+                        "interruptReasons_": Object {},
+                        "invalidAuthTokenCount_": 0,
+                        "lastConnectionAttemptTime_": null,
+                        "lastConnectionEstablishedTime_": null,
+                        "lastSessionId": null,
+                        "listens_": Object {},
+                        "log_": [Function],
+                        "maxReconnectDelay_": 300000,
+                        "onConnectStatus_": [Function],
+                        "onDataUpdate_": [Function],
+                        "onDisconnectRequestQueue_": Array [],
+                        "onServerInfoUpdate_": [Function],
+                        "outstandingPutCount_": 0,
+                        "outstandingPuts_": Array [],
+                        "realtime_": null,
+                        "reconnectDelay_": 1000,
+                        "repoInfo_": RepoInfo {
+                          "domain": "firebaseio.com",
+                          "host": "trading-app-test.firebaseio.com",
+                          "internalHost": "trading-app-test.firebaseio.com",
+                          "namespace": "trading-app-test",
+                          "persistenceKey": "",
+                          "secure": true,
+                          "webSocketOnly": false,
+                        },
+                        "requestCBHash_": Object {},
+                        "requestNumber_": 0,
+                        "securityDebugCallback_": null,
+                        "visible_": true,
+                      },
+                      "repoInfo_": RepoInfo {
+                        "domain": "firebaseio.com",
+                        "host": "trading-app-test.firebaseio.com",
+                        "internalHost": "trading-app-test.firebaseio.com",
+                        "namespace": "trading-app-test",
+                        "persistenceKey": "",
+                        "secure": true,
+                        "webSocketOnly": false,
+                      },
+                      "serverSyncTree_": SyncTree {
+                        "listenProvider_": Object {
+                          "startListening": [Function],
+                          "stopListening": [Function],
+                        },
+                        "pendingWriteTree_": WriteTree {
+                          "allWrites_": Array [],
+                          "lastWriteId_": -1,
+                          "visibleWrites_": CompoundWrite {
+                            "writeTree_": ImmutableTree {
+                              "children": SortedMap {
+                                "comparator_": [Function],
+                                "root_": LLRBEmptyNode {},
+                              },
+                              "value": null,
+                            },
+                          },
+                        },
+                        "queryToTagMap_": Object {},
+                        "syncPointTree_": ImmutableTree {
+                          "children": SortedMap {
+                            "comparator_": [Function],
+                            "root_": LLRBEmptyNode {},
+                          },
+                          "value": null,
+                        },
+                        "tagToQueryMap_": Object {},
+                      },
+                      "server_": PersistentConnection {
+                        "authOverride_": undefined,
+                        "authTokenProvider_": AuthTokenProvider {
+                          "app_": [Circular],
+                        },
+                        "authToken_": null,
+                        "connected_": false,
+                        "establishConnectionTimer_": 2,
+                        "firstConnection_": true,
+                        "forceTokenRefresh_": false,
+                        "id": 0,
+                        "interruptReasons_": Object {},
+                        "invalidAuthTokenCount_": 0,
+                        "lastConnectionAttemptTime_": null,
+                        "lastConnectionEstablishedTime_": null,
+                        "lastSessionId": null,
+                        "listens_": Object {},
+                        "log_": [Function],
+                        "maxReconnectDelay_": 300000,
+                        "onConnectStatus_": [Function],
+                        "onDataUpdate_": [Function],
+                        "onDisconnectRequestQueue_": Array [],
+                        "onServerInfoUpdate_": [Function],
+                        "outstandingPutCount_": 0,
+                        "outstandingPuts_": Array [],
+                        "realtime_": null,
+                        "reconnectDelay_": 1000,
+                        "repoInfo_": RepoInfo {
+                          "domain": "firebaseio.com",
+                          "host": "trading-app-test.firebaseio.com",
+                          "internalHost": "trading-app-test.firebaseio.com",
+                          "namespace": "trading-app-test",
+                          "persistenceKey": "",
+                          "secure": true,
+                          "webSocketOnly": false,
+                        },
+                        "requestCBHash_": Object {},
+                        "requestNumber_": 0,
+                        "securityDebugCallback_": null,
+                        "visible_": true,
+                      },
+                      "statsListener_": null,
+                      "statsReporter_": StatsReporter {
+                        "server_": PersistentConnection {
+                          "authOverride_": undefined,
+                          "authTokenProvider_": AuthTokenProvider {
+                            "app_": [Circular],
+                          },
+                          "authToken_": null,
+                          "connected_": false,
+                          "establishConnectionTimer_": 2,
+                          "firstConnection_": true,
+                          "forceTokenRefresh_": false,
+                          "id": 0,
+                          "interruptReasons_": Object {},
+                          "invalidAuthTokenCount_": 0,
+                          "lastConnectionAttemptTime_": null,
+                          "lastConnectionEstablishedTime_": null,
+                          "lastSessionId": null,
+                          "listens_": Object {},
+                          "log_": [Function],
+                          "maxReconnectDelay_": 300000,
+                          "onConnectStatus_": [Function],
+                          "onDataUpdate_": [Function],
+                          "onDisconnectRequestQueue_": Array [],
+                          "onServerInfoUpdate_": [Function],
+                          "outstandingPutCount_": 0,
+                          "outstandingPuts_": Array [],
+                          "realtime_": null,
+                          "reconnectDelay_": 1000,
+                          "repoInfo_": RepoInfo {
+                            "domain": "firebaseio.com",
+                            "host": "trading-app-test.firebaseio.com",
+                            "internalHost": "trading-app-test.firebaseio.com",
+                            "namespace": "trading-app-test",
+                            "persistenceKey": "",
+                            "secure": true,
+                            "webSocketOnly": false,
+                          },
+                          "requestCBHash_": Object {},
+                          "requestNumber_": 0,
+                          "securityDebugCallback_": null,
+                          "visible_": true,
+                        },
+                        "statsListener_": StatsListener {
+                          "collection_": StatsCollection {
+                            "counters_": Object {},
+                          },
+                          "last_": null,
+                        },
+                        "statsToReport_": Object {},
+                      },
+                      "stats_": StatsCollection {
+                        "counters_": Object {},
+                      },
+                      "transactionQueueTree_": Tree {
+                        "name_": "",
+                        "node_": TreeNode {
+                          "childCount": 0,
+                          "children": Object {},
+                          "value": null,
+                        },
+                        "parent_": null,
+                      },
+                    },
+                    "root_": "https://trading-app-test.firebaseio.com/",
+                  },
+                },
+                "storage": Object {
+                  "[DEFAULT]": Service {
+                    "app_": [Circular],
+                    "authWrapper_": [Circular],
+                    "bucket_": Location {
+                      "bucket": "trading-app-test.appspot.com",
+                      "path_": "",
+                    },
+                    "internals_": ServiceInternals {
+                      "service_": [Circular],
+                    },
+                  },
+                },
+              },
+            },
+            "bucket_": "trading-app-test.appspot.com",
+            "deleted_": false,
+            "maxOperationRetryTime_": 120000,
+            "maxUploadRetryTime_": 60000,
+            "pool_": XhrIoPool {},
+            "requestMaker_": [Function],
+            "requestMap_": RequestMap {
+              "id_": -9007199254740991,
+              "map_": Object {},
+            },
+            "service_": Service {
+              "app_": FirebaseAppImpl {
+                "INTERNAL": Object {
+                  "addAuthTokenListener": [Function],
+                  "getToken": [Function],
+                  "getUid": [Function],
+                  "removeAuthTokenListener": [Function],
+                },
+                "firebase_": Object {
+                  "INTERNAL": Object {
+                    "ErrorFactory": [Function],
+                    "Promise": [Function],
+                    "createFirebaseNamespace": [Function],
+                    "createSubscribe": [Function],
+                    "deepExtend": [Function],
+                    "extendNamespace": [Function],
+                    "factories": Object {
+                      "auth": [Function],
+                      "database": [Function],
+                      "storage": [Function],
+                    },
+                    "node": Object {
+                      "XMLHttpRequest": [Function],
+                      "localStorage": Storage {},
+                      "sessionStorage": Storage {},
+                    },
+                    "registerService": [Function],
+                    "removeApp": [Function],
+                    "useAsService": [Function],
+                  },
+                  "Promise": [Function],
+                  "SDK_VERSION": "4.2.0",
+                  "User": [Function],
+                  "__esModule": true,
+                  "app": [Function],
+                  "apps": Array [
+                    [Circular],
+                  ],
+                  "auth": [Function],
+                  "database": [Function],
+                  "default": [Circular],
+                  "initializeApp": [Function],
+                  "storage": [Function],
+                },
+                "isDeleted_": false,
+                "name_": "[DEFAULT]",
+                "options_": Object {
+                  "apiKey": "AIzaSyAtpT9y22RfEQRF0kugKRuP2ORGNYRQ8W0",
+                  "authDomain": "trading-app-test.firebaseapp.com",
+                  "databaseURL": "https://trading-app-test.firebaseio.com",
+                  "messagingSenderId": "801758573787",
+                  "projectId": "trading-app-test",
+                  "storageBucket": "trading-app-test.appspot.com",
+                },
+                "services_": Object {
+                  "auth": Object {
+                    "[DEFAULT]": Object {
+                      "apiKey": "AIzaSyAtpT9y22RfEQRF0kugKRuP2ORGNYRQ8W0",
+                      "appName": "[DEFAULT]",
+                      "authDomain": "trading-app-test.firebaseapp.com",
+                      "currentUser": null,
+                    },
+                  },
+                  "database": Object {
+                    "[DEFAULT]": Database {
+                      "INTERNAL": DatabaseInternals {
+                        "database": [Circular],
+                      },
+                      "repo_": Repo {
+                        "__database": [Circular],
+                        "app": [Circular],
+                        "dataUpdateCount": 0,
+                        "eventQueue_": EventQueue {
+                          "eventLists_": Array [],
+                          "recursionDepth_": 0,
+                        },
+                        "infoData_": SnapshotHolder {
+                          "rootNode_": ChildrenNode {
+                            "children_": SortedMap {
+                              "comparator_": [Function],
+                              "root_": LLRBNode {
+                                "color": false,
+                                "key": ".info",
+                                "left": LLRBEmptyNode {},
+                                "right": LLRBEmptyNode {},
+                                "value": ChildrenNode {
+                                  "children_": SortedMap {
+                                    "comparator_": [Function],
+                                    "root_": LLRBNode {
+                                      "color": false,
+                                      "key": "connected",
+                                      "left": LLRBEmptyNode {},
+                                      "right": LLRBEmptyNode {},
+                                      "value": LeafNode {
+                                        "lazyHash_": null,
+                                        "priorityNode_": ChildrenNode {
+                                          "children_": SortedMap {
+                                            "comparator_": [Function],
+                                            "root_": LLRBEmptyNode {},
+                                          },
+                                          "indexMap_": IndexMap {
+                                            "indexSet_": Object {
+                                              ".priority": PriorityIndex {},
+                                            },
+                                            "indexes_": Object {
+                                              ".priority": Object {},
+                                            },
+                                          },
+                                          "lazyHash_": null,
+                                          "priorityNode_": null,
+                                        },
+                                        "value_": false,
+                                      },
+                                    },
+                                  },
+                                  "indexMap_": IndexMap {
+                                    "indexSet_": Object {
+                                      ".priority": PriorityIndex {},
+                                    },
+                                    "indexes_": Object {
+                                      ".priority": Object {},
+                                    },
+                                  },
+                                  "lazyHash_": null,
+                                  "priorityNode_": null,
+                                },
+                              },
+                            },
+                            "indexMap_": IndexMap {
+                              "indexSet_": Object {
+                                ".priority": PriorityIndex {},
+                              },
+                              "indexes_": Object {
+                                ".priority": Object {},
+                              },
+                            },
+                            "lazyHash_": null,
+                            "priorityNode_": null,
+                          },
+                        },
+                        "infoSyncTree_": SyncTree {
+                          "listenProvider_": Object {
+                            "startListening": [Function],
+                            "stopListening": [Function],
+                          },
+                          "pendingWriteTree_": WriteTree {
+                            "allWrites_": Array [],
+                            "lastWriteId_": -1,
+                            "visibleWrites_": CompoundWrite {
+                              "writeTree_": ImmutableTree {
+                                "children": SortedMap {
+                                  "comparator_": [Function],
+                                  "root_": LLRBEmptyNode {},
+                                },
+                                "value": null,
+                              },
+                            },
+                          },
+                          "queryToTagMap_": Object {},
+                          "syncPointTree_": ImmutableTree {
+                            "children": SortedMap {
+                              "comparator_": [Function],
+                              "root_": LLRBEmptyNode {},
+                            },
+                            "value": null,
+                          },
+                          "tagToQueryMap_": Object {},
+                        },
+                        "interceptServerDataCallback_": null,
+                        "nextWriteId_": 1,
+                        "onDisconnect_": SparseSnapshotTree {
+                          "children_": null,
+                          "value_": null,
+                        },
+                        "persistentConnection_": PersistentConnection {
+                          "authOverride_": undefined,
+                          "authTokenProvider_": AuthTokenProvider {
+                            "app_": [Circular],
+                          },
+                          "authToken_": null,
+                          "connected_": false,
+                          "establishConnectionTimer_": 2,
+                          "firstConnection_": true,
+                          "forceTokenRefresh_": false,
+                          "id": 0,
+                          "interruptReasons_": Object {},
+                          "invalidAuthTokenCount_": 0,
+                          "lastConnectionAttemptTime_": null,
+                          "lastConnectionEstablishedTime_": null,
+                          "lastSessionId": null,
+                          "listens_": Object {},
+                          "log_": [Function],
+                          "maxReconnectDelay_": 300000,
+                          "onConnectStatus_": [Function],
+                          "onDataUpdate_": [Function],
+                          "onDisconnectRequestQueue_": Array [],
+                          "onServerInfoUpdate_": [Function],
+                          "outstandingPutCount_": 0,
+                          "outstandingPuts_": Array [],
+                          "realtime_": null,
+                          "reconnectDelay_": 1000,
+                          "repoInfo_": RepoInfo {
+                            "domain": "firebaseio.com",
+                            "host": "trading-app-test.firebaseio.com",
+                            "internalHost": "trading-app-test.firebaseio.com",
+                            "namespace": "trading-app-test",
+                            "persistenceKey": "",
+                            "secure": true,
+                            "webSocketOnly": false,
+                          },
+                          "requestCBHash_": Object {},
+                          "requestNumber_": 0,
+                          "securityDebugCallback_": null,
+                          "visible_": true,
+                        },
+                        "repoInfo_": RepoInfo {
+                          "domain": "firebaseio.com",
+                          "host": "trading-app-test.firebaseio.com",
+                          "internalHost": "trading-app-test.firebaseio.com",
+                          "namespace": "trading-app-test",
+                          "persistenceKey": "",
+                          "secure": true,
+                          "webSocketOnly": false,
+                        },
+                        "serverSyncTree_": SyncTree {
+                          "listenProvider_": Object {
+                            "startListening": [Function],
+                            "stopListening": [Function],
+                          },
+                          "pendingWriteTree_": WriteTree {
+                            "allWrites_": Array [],
+                            "lastWriteId_": -1,
+                            "visibleWrites_": CompoundWrite {
+                              "writeTree_": ImmutableTree {
+                                "children": SortedMap {
+                                  "comparator_": [Function],
+                                  "root_": LLRBEmptyNode {},
+                                },
+                                "value": null,
+                              },
+                            },
+                          },
+                          "queryToTagMap_": Object {},
+                          "syncPointTree_": ImmutableTree {
+                            "children": SortedMap {
+                              "comparator_": [Function],
+                              "root_": LLRBEmptyNode {},
+                            },
+                            "value": null,
+                          },
+                          "tagToQueryMap_": Object {},
+                        },
+                        "server_": PersistentConnection {
+                          "authOverride_": undefined,
+                          "authTokenProvider_": AuthTokenProvider {
+                            "app_": [Circular],
+                          },
+                          "authToken_": null,
+                          "connected_": false,
+                          "establishConnectionTimer_": 2,
+                          "firstConnection_": true,
+                          "forceTokenRefresh_": false,
+                          "id": 0,
+                          "interruptReasons_": Object {},
+                          "invalidAuthTokenCount_": 0,
+                          "lastConnectionAttemptTime_": null,
+                          "lastConnectionEstablishedTime_": null,
+                          "lastSessionId": null,
+                          "listens_": Object {},
+                          "log_": [Function],
+                          "maxReconnectDelay_": 300000,
+                          "onConnectStatus_": [Function],
+                          "onDataUpdate_": [Function],
+                          "onDisconnectRequestQueue_": Array [],
+                          "onServerInfoUpdate_": [Function],
+                          "outstandingPutCount_": 0,
+                          "outstandingPuts_": Array [],
+                          "realtime_": null,
+                          "reconnectDelay_": 1000,
+                          "repoInfo_": RepoInfo {
+                            "domain": "firebaseio.com",
+                            "host": "trading-app-test.firebaseio.com",
+                            "internalHost": "trading-app-test.firebaseio.com",
+                            "namespace": "trading-app-test",
+                            "persistenceKey": "",
+                            "secure": true,
+                            "webSocketOnly": false,
+                          },
+                          "requestCBHash_": Object {},
+                          "requestNumber_": 0,
+                          "securityDebugCallback_": null,
+                          "visible_": true,
+                        },
+                        "statsListener_": null,
+                        "statsReporter_": StatsReporter {
+                          "server_": PersistentConnection {
+                            "authOverride_": undefined,
+                            "authTokenProvider_": AuthTokenProvider {
+                              "app_": [Circular],
+                            },
+                            "authToken_": null,
+                            "connected_": false,
+                            "establishConnectionTimer_": 2,
+                            "firstConnection_": true,
+                            "forceTokenRefresh_": false,
+                            "id": 0,
+                            "interruptReasons_": Object {},
+                            "invalidAuthTokenCount_": 0,
+                            "lastConnectionAttemptTime_": null,
+                            "lastConnectionEstablishedTime_": null,
+                            "lastSessionId": null,
+                            "listens_": Object {},
+                            "log_": [Function],
+                            "maxReconnectDelay_": 300000,
+                            "onConnectStatus_": [Function],
+                            "onDataUpdate_": [Function],
+                            "onDisconnectRequestQueue_": Array [],
+                            "onServerInfoUpdate_": [Function],
+                            "outstandingPutCount_": 0,
+                            "outstandingPuts_": Array [],
+                            "realtime_": null,
+                            "reconnectDelay_": 1000,
+                            "repoInfo_": RepoInfo {
+                              "domain": "firebaseio.com",
+                              "host": "trading-app-test.firebaseio.com",
+                              "internalHost": "trading-app-test.firebaseio.com",
+                              "namespace": "trading-app-test",
+                              "persistenceKey": "",
+                              "secure": true,
+                              "webSocketOnly": false,
+                            },
+                            "requestCBHash_": Object {},
+                            "requestNumber_": 0,
+                            "securityDebugCallback_": null,
+                            "visible_": true,
+                          },
+                          "statsListener_": StatsListener {
+                            "collection_": StatsCollection {
+                              "counters_": Object {},
+                            },
+                            "last_": null,
+                          },
+                          "statsToReport_": Object {},
+                        },
+                        "stats_": StatsCollection {
+                          "counters_": Object {},
+                        },
+                        "transactionQueueTree_": Tree {
+                          "name_": "",
+                          "node_": TreeNode {
+                            "childCount": 0,
+                            "children": Object {},
+                            "value": null,
+                          },
+                          "parent_": null,
+                        },
+                      },
+                      "root_": "https://trading-app-test.firebaseio.com/",
+                    },
+                  },
+                  "storage": Object {
+                    "[DEFAULT]": [Circular],
+                  },
+                },
+              },
+              "authWrapper_": [Circular],
+              "bucket_": Location {
+                "bucket": "trading-app-test.appspot.com",
+                "path_": "",
+              },
+              "internals_": ServiceInternals {
+                "service_": [Circular],
+              },
+            },
+            "storageRefMaker_": [Function],
+          },
+          "location": Location {
+            "bucket": "trading-app-test.appspot.com",
+            "path_": "images",
+          },
+        }
+      }
+    />
+  </label>
+  <input
+    autoFocus={true}
+    className="text-input"
+    onChange={[Function]}
+    placeholder="What are you trading?"
+    type="text"
+    value=""
+  />
+  <input
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Price"
+    type="text"
+    value=""
+  />
+  <input
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Select Category"
+    type="text"
+    value=""
+  />
+  <input
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Location"
+    type="text"
+    value=""
+  />
+  <input
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Decription"
+    type="text"
+    value=""
+  />
+  <div>
+    <button
+      className="button"
+    >
+      Save Item
+    </button>
+  </div>
+</form>
+`;
+
+exports[`should render ItemForm with items data 1`] = `
+<form
+  className="form"
+  onSubmit={[Function]}
+>
+  <div
+    className="form-image-list"
+  >
+    <div
+      className="form-image-list__item"
+      key="0"
+    >
+      <img
+        className="list-item-image"
+        src="222"
+      />
+      <i
+        className="material-icons button--image"
+        onClick={[Function]}
+      >
+        delete
+      </i>
+    </div>
+    <div
+      className="form-image-list__item"
+      key="1"
+    >
+      <img
+        className="list-item-image"
+        src={20202}
+      />
+      <i
+        className="material-icons button--image"
+        onClick={[Function]}
+      >
+        delete
+      </i>
+    </div>
+  </div>
+  <label
+    className="form-image"
+  >
+    + Add Image(s)
+    <FirebaseFileUploader
+      accept="image/*"
+      hidden={true}
+      multiple={true}
+      name="item"
+      onProgress={[Function]}
+      onUploadError={[Function]}
+      onUploadStart={[Function]}
+      onUploadSuccess={[Function]}
+      randomizeFilename={true}
+      storageRef={
+        Reference {
+          "authWrapper": AuthWrapper {
+            "app_": FirebaseAppImpl {
+              "INTERNAL": Object {
+                "addAuthTokenListener": [Function],
+                "getToken": [Function],
+                "getUid": [Function],
+                "removeAuthTokenListener": [Function],
+              },
+              "firebase_": Object {
+                "INTERNAL": Object {
+                  "ErrorFactory": [Function],
+                  "Promise": [Function],
+                  "createFirebaseNamespace": [Function],
+                  "createSubscribe": [Function],
+                  "deepExtend": [Function],
+                  "extendNamespace": [Function],
+                  "factories": Object {
+                    "auth": [Function],
+                    "database": [Function],
+                    "storage": [Function],
+                  },
+                  "node": Object {
+                    "XMLHttpRequest": [Function],
+                    "localStorage": Storage {},
+                    "sessionStorage": Storage {},
+                  },
+                  "registerService": [Function],
+                  "removeApp": [Function],
+                  "useAsService": [Function],
+                },
+                "Promise": [Function],
+                "SDK_VERSION": "4.2.0",
+                "User": [Function],
+                "__esModule": true,
+                "app": [Function],
+                "apps": Array [
+                  [Circular],
+                ],
+                "auth": [Function],
+                "database": [Function],
+                "default": [Circular],
+                "initializeApp": [Function],
+                "storage": [Function],
+              },
+              "isDeleted_": false,
+              "name_": "[DEFAULT]",
+              "options_": Object {
+                "apiKey": "AIzaSyAtpT9y22RfEQRF0kugKRuP2ORGNYRQ8W0",
+                "authDomain": "trading-app-test.firebaseapp.com",
+                "databaseURL": "https://trading-app-test.firebaseio.com",
+                "messagingSenderId": "801758573787",
+                "projectId": "trading-app-test",
+                "storageBucket": "trading-app-test.appspot.com",
+              },
+              "services_": Object {
+                "auth": Object {
+                  "[DEFAULT]": Object {
+                    "apiKey": "AIzaSyAtpT9y22RfEQRF0kugKRuP2ORGNYRQ8W0",
+                    "appName": "[DEFAULT]",
+                    "authDomain": "trading-app-test.firebaseapp.com",
+                    "currentUser": null,
+                  },
+                },
+                "database": Object {
+                  "[DEFAULT]": Database {
+                    "INTERNAL": DatabaseInternals {
+                      "database": [Circular],
+                    },
+                    "repo_": Repo {
+                      "__database": [Circular],
+                      "app": [Circular],
+                      "dataUpdateCount": 0,
+                      "eventQueue_": EventQueue {
+                        "eventLists_": Array [],
+                        "recursionDepth_": 0,
+                      },
+                      "infoData_": SnapshotHolder {
+                        "rootNode_": ChildrenNode {
+                          "children_": SortedMap {
+                            "comparator_": [Function],
+                            "root_": LLRBNode {
+                              "color": false,
+                              "key": ".info",
+                              "left": LLRBEmptyNode {},
+                              "right": LLRBEmptyNode {},
+                              "value": ChildrenNode {
+                                "children_": SortedMap {
+                                  "comparator_": [Function],
+                                  "root_": LLRBNode {
+                                    "color": false,
+                                    "key": "connected",
+                                    "left": LLRBEmptyNode {},
+                                    "right": LLRBEmptyNode {},
+                                    "value": LeafNode {
+                                      "lazyHash_": null,
+                                      "priorityNode_": ChildrenNode {
+                                        "children_": SortedMap {
+                                          "comparator_": [Function],
+                                          "root_": LLRBEmptyNode {},
+                                        },
+                                        "indexMap_": IndexMap {
+                                          "indexSet_": Object {
+                                            ".priority": PriorityIndex {},
+                                          },
+                                          "indexes_": Object {
+                                            ".priority": Object {},
+                                          },
+                                        },
+                                        "lazyHash_": null,
+                                        "priorityNode_": null,
+                                      },
+                                      "value_": false,
+                                    },
+                                  },
+                                },
+                                "indexMap_": IndexMap {
+                                  "indexSet_": Object {
+                                    ".priority": PriorityIndex {},
+                                  },
+                                  "indexes_": Object {
+                                    ".priority": Object {},
+                                  },
+                                },
+                                "lazyHash_": null,
+                                "priorityNode_": null,
+                              },
+                            },
+                          },
+                          "indexMap_": IndexMap {
+                            "indexSet_": Object {
+                              ".priority": PriorityIndex {},
+                            },
+                            "indexes_": Object {
+                              ".priority": Object {},
+                            },
+                          },
+                          "lazyHash_": null,
+                          "priorityNode_": null,
+                        },
+                      },
+                      "infoSyncTree_": SyncTree {
+                        "listenProvider_": Object {
+                          "startListening": [Function],
+                          "stopListening": [Function],
+                        },
+                        "pendingWriteTree_": WriteTree {
+                          "allWrites_": Array [],
+                          "lastWriteId_": -1,
+                          "visibleWrites_": CompoundWrite {
+                            "writeTree_": ImmutableTree {
+                              "children": SortedMap {
+                                "comparator_": [Function],
+                                "root_": LLRBEmptyNode {},
+                              },
+                              "value": null,
+                            },
+                          },
+                        },
+                        "queryToTagMap_": Object {},
+                        "syncPointTree_": ImmutableTree {
+                          "children": SortedMap {
+                            "comparator_": [Function],
+                            "root_": LLRBEmptyNode {},
+                          },
+                          "value": null,
+                        },
+                        "tagToQueryMap_": Object {},
+                      },
+                      "interceptServerDataCallback_": null,
+                      "nextWriteId_": 1,
+                      "onDisconnect_": SparseSnapshotTree {
+                        "children_": null,
+                        "value_": null,
+                      },
+                      "persistentConnection_": PersistentConnection {
+                        "authOverride_": undefined,
+                        "authTokenProvider_": AuthTokenProvider {
+                          "app_": [Circular],
+                        },
+                        "authToken_": null,
+                        "connected_": false,
+                        "establishConnectionTimer_": 2,
+                        "firstConnection_": true,
+                        "forceTokenRefresh_": false,
+                        "id": 0,
+                        "interruptReasons_": Object {},
+                        "invalidAuthTokenCount_": 0,
+                        "lastConnectionAttemptTime_": null,
+                        "lastConnectionEstablishedTime_": null,
+                        "lastSessionId": null,
+                        "listens_": Object {},
+                        "log_": [Function],
+                        "maxReconnectDelay_": 300000,
+                        "onConnectStatus_": [Function],
+                        "onDataUpdate_": [Function],
+                        "onDisconnectRequestQueue_": Array [],
+                        "onServerInfoUpdate_": [Function],
+                        "outstandingPutCount_": 0,
+                        "outstandingPuts_": Array [],
+                        "realtime_": null,
+                        "reconnectDelay_": 1000,
+                        "repoInfo_": RepoInfo {
+                          "domain": "firebaseio.com",
+                          "host": "trading-app-test.firebaseio.com",
+                          "internalHost": "trading-app-test.firebaseio.com",
+                          "namespace": "trading-app-test",
+                          "persistenceKey": "",
+                          "secure": true,
+                          "webSocketOnly": false,
+                        },
+                        "requestCBHash_": Object {},
+                        "requestNumber_": 0,
+                        "securityDebugCallback_": null,
+                        "visible_": true,
+                      },
+                      "repoInfo_": RepoInfo {
+                        "domain": "firebaseio.com",
+                        "host": "trading-app-test.firebaseio.com",
+                        "internalHost": "trading-app-test.firebaseio.com",
+                        "namespace": "trading-app-test",
+                        "persistenceKey": "",
+                        "secure": true,
+                        "webSocketOnly": false,
+                      },
+                      "serverSyncTree_": SyncTree {
+                        "listenProvider_": Object {
+                          "startListening": [Function],
+                          "stopListening": [Function],
+                        },
+                        "pendingWriteTree_": WriteTree {
+                          "allWrites_": Array [],
+                          "lastWriteId_": -1,
+                          "visibleWrites_": CompoundWrite {
+                            "writeTree_": ImmutableTree {
+                              "children": SortedMap {
+                                "comparator_": [Function],
+                                "root_": LLRBEmptyNode {},
+                              },
+                              "value": null,
+                            },
+                          },
+                        },
+                        "queryToTagMap_": Object {},
+                        "syncPointTree_": ImmutableTree {
+                          "children": SortedMap {
+                            "comparator_": [Function],
+                            "root_": LLRBEmptyNode {},
+                          },
+                          "value": null,
+                        },
+                        "tagToQueryMap_": Object {},
+                      },
+                      "server_": PersistentConnection {
+                        "authOverride_": undefined,
+                        "authTokenProvider_": AuthTokenProvider {
+                          "app_": [Circular],
+                        },
+                        "authToken_": null,
+                        "connected_": false,
+                        "establishConnectionTimer_": 2,
+                        "firstConnection_": true,
+                        "forceTokenRefresh_": false,
+                        "id": 0,
+                        "interruptReasons_": Object {},
+                        "invalidAuthTokenCount_": 0,
+                        "lastConnectionAttemptTime_": null,
+                        "lastConnectionEstablishedTime_": null,
+                        "lastSessionId": null,
+                        "listens_": Object {},
+                        "log_": [Function],
+                        "maxReconnectDelay_": 300000,
+                        "onConnectStatus_": [Function],
+                        "onDataUpdate_": [Function],
+                        "onDisconnectRequestQueue_": Array [],
+                        "onServerInfoUpdate_": [Function],
+                        "outstandingPutCount_": 0,
+                        "outstandingPuts_": Array [],
+                        "realtime_": null,
+                        "reconnectDelay_": 1000,
+                        "repoInfo_": RepoInfo {
+                          "domain": "firebaseio.com",
+                          "host": "trading-app-test.firebaseio.com",
+                          "internalHost": "trading-app-test.firebaseio.com",
+                          "namespace": "trading-app-test",
+                          "persistenceKey": "",
+                          "secure": true,
+                          "webSocketOnly": false,
+                        },
+                        "requestCBHash_": Object {},
+                        "requestNumber_": 0,
+                        "securityDebugCallback_": null,
+                        "visible_": true,
+                      },
+                      "statsListener_": null,
+                      "statsReporter_": StatsReporter {
+                        "server_": PersistentConnection {
+                          "authOverride_": undefined,
+                          "authTokenProvider_": AuthTokenProvider {
+                            "app_": [Circular],
+                          },
+                          "authToken_": null,
+                          "connected_": false,
+                          "establishConnectionTimer_": 2,
+                          "firstConnection_": true,
+                          "forceTokenRefresh_": false,
+                          "id": 0,
+                          "interruptReasons_": Object {},
+                          "invalidAuthTokenCount_": 0,
+                          "lastConnectionAttemptTime_": null,
+                          "lastConnectionEstablishedTime_": null,
+                          "lastSessionId": null,
+                          "listens_": Object {},
+                          "log_": [Function],
+                          "maxReconnectDelay_": 300000,
+                          "onConnectStatus_": [Function],
+                          "onDataUpdate_": [Function],
+                          "onDisconnectRequestQueue_": Array [],
+                          "onServerInfoUpdate_": [Function],
+                          "outstandingPutCount_": 0,
+                          "outstandingPuts_": Array [],
+                          "realtime_": null,
+                          "reconnectDelay_": 1000,
+                          "repoInfo_": RepoInfo {
+                            "domain": "firebaseio.com",
+                            "host": "trading-app-test.firebaseio.com",
+                            "internalHost": "trading-app-test.firebaseio.com",
+                            "namespace": "trading-app-test",
+                            "persistenceKey": "",
+                            "secure": true,
+                            "webSocketOnly": false,
+                          },
+                          "requestCBHash_": Object {},
+                          "requestNumber_": 0,
+                          "securityDebugCallback_": null,
+                          "visible_": true,
+                        },
+                        "statsListener_": StatsListener {
+                          "collection_": StatsCollection {
+                            "counters_": Object {},
+                          },
+                          "last_": null,
+                        },
+                        "statsToReport_": Object {},
+                      },
+                      "stats_": StatsCollection {
+                        "counters_": Object {},
+                      },
+                      "transactionQueueTree_": Tree {
+                        "name_": "",
+                        "node_": TreeNode {
+                          "childCount": 0,
+                          "children": Object {},
+                          "value": null,
+                        },
+                        "parent_": null,
+                      },
+                    },
+                    "root_": "https://trading-app-test.firebaseio.com/",
+                  },
+                },
+                "storage": Object {
+                  "[DEFAULT]": Service {
+                    "app_": [Circular],
+                    "authWrapper_": [Circular],
+                    "bucket_": Location {
+                      "bucket": "trading-app-test.appspot.com",
+                      "path_": "",
+                    },
+                    "internals_": ServiceInternals {
+                      "service_": [Circular],
+                    },
+                  },
+                },
+              },
+            },
+            "bucket_": "trading-app-test.appspot.com",
+            "deleted_": false,
+            "maxOperationRetryTime_": 120000,
+            "maxUploadRetryTime_": 60000,
+            "pool_": XhrIoPool {},
+            "requestMaker_": [Function],
+            "requestMap_": RequestMap {
+              "id_": -9007199254740991,
+              "map_": Object {},
+            },
+            "service_": Service {
+              "app_": FirebaseAppImpl {
+                "INTERNAL": Object {
+                  "addAuthTokenListener": [Function],
+                  "getToken": [Function],
+                  "getUid": [Function],
+                  "removeAuthTokenListener": [Function],
+                },
+                "firebase_": Object {
+                  "INTERNAL": Object {
+                    "ErrorFactory": [Function],
+                    "Promise": [Function],
+                    "createFirebaseNamespace": [Function],
+                    "createSubscribe": [Function],
+                    "deepExtend": [Function],
+                    "extendNamespace": [Function],
+                    "factories": Object {
+                      "auth": [Function],
+                      "database": [Function],
+                      "storage": [Function],
+                    },
+                    "node": Object {
+                      "XMLHttpRequest": [Function],
+                      "localStorage": Storage {},
+                      "sessionStorage": Storage {},
+                    },
+                    "registerService": [Function],
+                    "removeApp": [Function],
+                    "useAsService": [Function],
+                  },
+                  "Promise": [Function],
+                  "SDK_VERSION": "4.2.0",
+                  "User": [Function],
+                  "__esModule": true,
+                  "app": [Function],
+                  "apps": Array [
+                    [Circular],
+                  ],
+                  "auth": [Function],
+                  "database": [Function],
+                  "default": [Circular],
+                  "initializeApp": [Function],
+                  "storage": [Function],
+                },
+                "isDeleted_": false,
+                "name_": "[DEFAULT]",
+                "options_": Object {
+                  "apiKey": "AIzaSyAtpT9y22RfEQRF0kugKRuP2ORGNYRQ8W0",
+                  "authDomain": "trading-app-test.firebaseapp.com",
+                  "databaseURL": "https://trading-app-test.firebaseio.com",
+                  "messagingSenderId": "801758573787",
+                  "projectId": "trading-app-test",
+                  "storageBucket": "trading-app-test.appspot.com",
+                },
+                "services_": Object {
+                  "auth": Object {
+                    "[DEFAULT]": Object {
+                      "apiKey": "AIzaSyAtpT9y22RfEQRF0kugKRuP2ORGNYRQ8W0",
+                      "appName": "[DEFAULT]",
+                      "authDomain": "trading-app-test.firebaseapp.com",
+                      "currentUser": null,
+                    },
+                  },
+                  "database": Object {
+                    "[DEFAULT]": Database {
+                      "INTERNAL": DatabaseInternals {
+                        "database": [Circular],
+                      },
+                      "repo_": Repo {
+                        "__database": [Circular],
+                        "app": [Circular],
+                        "dataUpdateCount": 0,
+                        "eventQueue_": EventQueue {
+                          "eventLists_": Array [],
+                          "recursionDepth_": 0,
+                        },
+                        "infoData_": SnapshotHolder {
+                          "rootNode_": ChildrenNode {
+                            "children_": SortedMap {
+                              "comparator_": [Function],
+                              "root_": LLRBNode {
+                                "color": false,
+                                "key": ".info",
+                                "left": LLRBEmptyNode {},
+                                "right": LLRBEmptyNode {},
+                                "value": ChildrenNode {
+                                  "children_": SortedMap {
+                                    "comparator_": [Function],
+                                    "root_": LLRBNode {
+                                      "color": false,
+                                      "key": "connected",
+                                      "left": LLRBEmptyNode {},
+                                      "right": LLRBEmptyNode {},
+                                      "value": LeafNode {
+                                        "lazyHash_": null,
+                                        "priorityNode_": ChildrenNode {
+                                          "children_": SortedMap {
+                                            "comparator_": [Function],
+                                            "root_": LLRBEmptyNode {},
+                                          },
+                                          "indexMap_": IndexMap {
+                                            "indexSet_": Object {
+                                              ".priority": PriorityIndex {},
+                                            },
+                                            "indexes_": Object {
+                                              ".priority": Object {},
+                                            },
+                                          },
+                                          "lazyHash_": null,
+                                          "priorityNode_": null,
+                                        },
+                                        "value_": false,
+                                      },
+                                    },
+                                  },
+                                  "indexMap_": IndexMap {
+                                    "indexSet_": Object {
+                                      ".priority": PriorityIndex {},
+                                    },
+                                    "indexes_": Object {
+                                      ".priority": Object {},
+                                    },
+                                  },
+                                  "lazyHash_": null,
+                                  "priorityNode_": null,
+                                },
+                              },
+                            },
+                            "indexMap_": IndexMap {
+                              "indexSet_": Object {
+                                ".priority": PriorityIndex {},
+                              },
+                              "indexes_": Object {
+                                ".priority": Object {},
+                              },
+                            },
+                            "lazyHash_": null,
+                            "priorityNode_": null,
+                          },
+                        },
+                        "infoSyncTree_": SyncTree {
+                          "listenProvider_": Object {
+                            "startListening": [Function],
+                            "stopListening": [Function],
+                          },
+                          "pendingWriteTree_": WriteTree {
+                            "allWrites_": Array [],
+                            "lastWriteId_": -1,
+                            "visibleWrites_": CompoundWrite {
+                              "writeTree_": ImmutableTree {
+                                "children": SortedMap {
+                                  "comparator_": [Function],
+                                  "root_": LLRBEmptyNode {},
+                                },
+                                "value": null,
+                              },
+                            },
+                          },
+                          "queryToTagMap_": Object {},
+                          "syncPointTree_": ImmutableTree {
+                            "children": SortedMap {
+                              "comparator_": [Function],
+                              "root_": LLRBEmptyNode {},
+                            },
+                            "value": null,
+                          },
+                          "tagToQueryMap_": Object {},
+                        },
+                        "interceptServerDataCallback_": null,
+                        "nextWriteId_": 1,
+                        "onDisconnect_": SparseSnapshotTree {
+                          "children_": null,
+                          "value_": null,
+                        },
+                        "persistentConnection_": PersistentConnection {
+                          "authOverride_": undefined,
+                          "authTokenProvider_": AuthTokenProvider {
+                            "app_": [Circular],
+                          },
+                          "authToken_": null,
+                          "connected_": false,
+                          "establishConnectionTimer_": 2,
+                          "firstConnection_": true,
+                          "forceTokenRefresh_": false,
+                          "id": 0,
+                          "interruptReasons_": Object {},
+                          "invalidAuthTokenCount_": 0,
+                          "lastConnectionAttemptTime_": null,
+                          "lastConnectionEstablishedTime_": null,
+                          "lastSessionId": null,
+                          "listens_": Object {},
+                          "log_": [Function],
+                          "maxReconnectDelay_": 300000,
+                          "onConnectStatus_": [Function],
+                          "onDataUpdate_": [Function],
+                          "onDisconnectRequestQueue_": Array [],
+                          "onServerInfoUpdate_": [Function],
+                          "outstandingPutCount_": 0,
+                          "outstandingPuts_": Array [],
+                          "realtime_": null,
+                          "reconnectDelay_": 1000,
+                          "repoInfo_": RepoInfo {
+                            "domain": "firebaseio.com",
+                            "host": "trading-app-test.firebaseio.com",
+                            "internalHost": "trading-app-test.firebaseio.com",
+                            "namespace": "trading-app-test",
+                            "persistenceKey": "",
+                            "secure": true,
+                            "webSocketOnly": false,
+                          },
+                          "requestCBHash_": Object {},
+                          "requestNumber_": 0,
+                          "securityDebugCallback_": null,
+                          "visible_": true,
+                        },
+                        "repoInfo_": RepoInfo {
+                          "domain": "firebaseio.com",
+                          "host": "trading-app-test.firebaseio.com",
+                          "internalHost": "trading-app-test.firebaseio.com",
+                          "namespace": "trading-app-test",
+                          "persistenceKey": "",
+                          "secure": true,
+                          "webSocketOnly": false,
+                        },
+                        "serverSyncTree_": SyncTree {
+                          "listenProvider_": Object {
+                            "startListening": [Function],
+                            "stopListening": [Function],
+                          },
+                          "pendingWriteTree_": WriteTree {
+                            "allWrites_": Array [],
+                            "lastWriteId_": -1,
+                            "visibleWrites_": CompoundWrite {
+                              "writeTree_": ImmutableTree {
+                                "children": SortedMap {
+                                  "comparator_": [Function],
+                                  "root_": LLRBEmptyNode {},
+                                },
+                                "value": null,
+                              },
+                            },
+                          },
+                          "queryToTagMap_": Object {},
+                          "syncPointTree_": ImmutableTree {
+                            "children": SortedMap {
+                              "comparator_": [Function],
+                              "root_": LLRBEmptyNode {},
+                            },
+                            "value": null,
+                          },
+                          "tagToQueryMap_": Object {},
+                        },
+                        "server_": PersistentConnection {
+                          "authOverride_": undefined,
+                          "authTokenProvider_": AuthTokenProvider {
+                            "app_": [Circular],
+                          },
+                          "authToken_": null,
+                          "connected_": false,
+                          "establishConnectionTimer_": 2,
+                          "firstConnection_": true,
+                          "forceTokenRefresh_": false,
+                          "id": 0,
+                          "interruptReasons_": Object {},
+                          "invalidAuthTokenCount_": 0,
+                          "lastConnectionAttemptTime_": null,
+                          "lastConnectionEstablishedTime_": null,
+                          "lastSessionId": null,
+                          "listens_": Object {},
+                          "log_": [Function],
+                          "maxReconnectDelay_": 300000,
+                          "onConnectStatus_": [Function],
+                          "onDataUpdate_": [Function],
+                          "onDisconnectRequestQueue_": Array [],
+                          "onServerInfoUpdate_": [Function],
+                          "outstandingPutCount_": 0,
+                          "outstandingPuts_": Array [],
+                          "realtime_": null,
+                          "reconnectDelay_": 1000,
+                          "repoInfo_": RepoInfo {
+                            "domain": "firebaseio.com",
+                            "host": "trading-app-test.firebaseio.com",
+                            "internalHost": "trading-app-test.firebaseio.com",
+                            "namespace": "trading-app-test",
+                            "persistenceKey": "",
+                            "secure": true,
+                            "webSocketOnly": false,
+                          },
+                          "requestCBHash_": Object {},
+                          "requestNumber_": 0,
+                          "securityDebugCallback_": null,
+                          "visible_": true,
+                        },
+                        "statsListener_": null,
+                        "statsReporter_": StatsReporter {
+                          "server_": PersistentConnection {
+                            "authOverride_": undefined,
+                            "authTokenProvider_": AuthTokenProvider {
+                              "app_": [Circular],
+                            },
+                            "authToken_": null,
+                            "connected_": false,
+                            "establishConnectionTimer_": 2,
+                            "firstConnection_": true,
+                            "forceTokenRefresh_": false,
+                            "id": 0,
+                            "interruptReasons_": Object {},
+                            "invalidAuthTokenCount_": 0,
+                            "lastConnectionAttemptTime_": null,
+                            "lastConnectionEstablishedTime_": null,
+                            "lastSessionId": null,
+                            "listens_": Object {},
+                            "log_": [Function],
+                            "maxReconnectDelay_": 300000,
+                            "onConnectStatus_": [Function],
+                            "onDataUpdate_": [Function],
+                            "onDisconnectRequestQueue_": Array [],
+                            "onServerInfoUpdate_": [Function],
+                            "outstandingPutCount_": 0,
+                            "outstandingPuts_": Array [],
+                            "realtime_": null,
+                            "reconnectDelay_": 1000,
+                            "repoInfo_": RepoInfo {
+                              "domain": "firebaseio.com",
+                              "host": "trading-app-test.firebaseio.com",
+                              "internalHost": "trading-app-test.firebaseio.com",
+                              "namespace": "trading-app-test",
+                              "persistenceKey": "",
+                              "secure": true,
+                              "webSocketOnly": false,
+                            },
+                            "requestCBHash_": Object {},
+                            "requestNumber_": 0,
+                            "securityDebugCallback_": null,
+                            "visible_": true,
+                          },
+                          "statsListener_": StatsListener {
+                            "collection_": StatsCollection {
+                              "counters_": Object {},
+                            },
+                            "last_": null,
+                          },
+                          "statsToReport_": Object {},
+                        },
+                        "stats_": StatsCollection {
+                          "counters_": Object {},
+                        },
+                        "transactionQueueTree_": Tree {
+                          "name_": "",
+                          "node_": TreeNode {
+                            "childCount": 0,
+                            "children": Object {},
+                            "value": null,
+                          },
+                          "parent_": null,
+                        },
+                      },
+                      "root_": "https://trading-app-test.firebaseio.com/",
+                    },
+                  },
+                  "storage": Object {
+                    "[DEFAULT]": [Circular],
+                  },
+                },
+              },
+              "authWrapper_": [Circular],
+              "bucket_": Location {
+                "bucket": "trading-app-test.appspot.com",
+                "path_": "",
+              },
+              "internals_": ServiceInternals {
+                "service_": [Circular],
+              },
+            },
+            "storageRefMaker_": [Function],
+          },
+          "location": Location {
+            "bucket": "trading-app-test.appspot.com",
+            "path_": "images",
+          },
+        }
+      }
+    />
+  </label>
+  <input
+    autoFocus={true}
+    className="text-input"
+    onChange={[Function]}
+    placeholder="What are you trading?"
+    type="text"
+    value="stereo"
+  />
+  <input
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Price"
+    type="text"
+    value="810"
+  />
+  <input
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Select Category"
+    type="text"
+    value="electronics"
+  />
+  <input
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Location"
+    type="text"
+    value="Dunedin"
+  />
+  <input
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Decription"
+    type="text"
+    value="like new"
+  />
+  <div>
+    <button
+      className="button"
+    >
+      Save Item
+    </button>
+  </div>
+</form>
+`;
+
+exports[`should render error for invalid form submission 1`] = `
+<form
+  className="form"
+  onSubmit={[Function]}
+>
+  <div
+    className="form-image-list"
+  />
+  <label
+    className="form-image"
+  >
+    + Add Image(s)
+    <FirebaseFileUploader
+      accept="image/*"
+      hidden={true}
+      multiple={true}
+      name="item"
+      onProgress={[Function]}
+      onUploadError={[Function]}
+      onUploadStart={[Function]}
+      onUploadSuccess={[Function]}
+      randomizeFilename={true}
+      storageRef={
+        Reference {
+          "authWrapper": AuthWrapper {
+            "app_": FirebaseAppImpl {
+              "INTERNAL": Object {
+                "addAuthTokenListener": [Function],
+                "getToken": [Function],
+                "getUid": [Function],
+                "removeAuthTokenListener": [Function],
+              },
+              "firebase_": Object {
+                "INTERNAL": Object {
+                  "ErrorFactory": [Function],
+                  "Promise": [Function],
+                  "createFirebaseNamespace": [Function],
+                  "createSubscribe": [Function],
+                  "deepExtend": [Function],
+                  "extendNamespace": [Function],
+                  "factories": Object {
+                    "auth": [Function],
+                    "database": [Function],
+                    "storage": [Function],
+                  },
+                  "node": Object {
+                    "XMLHttpRequest": [Function],
+                    "localStorage": Storage {},
+                    "sessionStorage": Storage {},
+                  },
+                  "registerService": [Function],
+                  "removeApp": [Function],
+                  "useAsService": [Function],
+                },
+                "Promise": [Function],
+                "SDK_VERSION": "4.2.0",
+                "User": [Function],
+                "__esModule": true,
+                "app": [Function],
+                "apps": Array [
+                  [Circular],
+                ],
+                "auth": [Function],
+                "database": [Function],
+                "default": [Circular],
+                "initializeApp": [Function],
+                "storage": [Function],
+              },
+              "isDeleted_": false,
+              "name_": "[DEFAULT]",
+              "options_": Object {
+                "apiKey": "AIzaSyAtpT9y22RfEQRF0kugKRuP2ORGNYRQ8W0",
+                "authDomain": "trading-app-test.firebaseapp.com",
+                "databaseURL": "https://trading-app-test.firebaseio.com",
+                "messagingSenderId": "801758573787",
+                "projectId": "trading-app-test",
+                "storageBucket": "trading-app-test.appspot.com",
+              },
+              "services_": Object {
+                "auth": Object {
+                  "[DEFAULT]": Object {
+                    "apiKey": "AIzaSyAtpT9y22RfEQRF0kugKRuP2ORGNYRQ8W0",
+                    "appName": "[DEFAULT]",
+                    "authDomain": "trading-app-test.firebaseapp.com",
+                    "currentUser": null,
+                  },
+                },
+                "database": Object {
+                  "[DEFAULT]": Database {
+                    "INTERNAL": DatabaseInternals {
+                      "database": [Circular],
+                    },
+                    "repo_": Repo {
+                      "__database": [Circular],
+                      "app": [Circular],
+                      "dataUpdateCount": 0,
+                      "eventQueue_": EventQueue {
+                        "eventLists_": Array [],
+                        "recursionDepth_": 0,
+                      },
+                      "infoData_": SnapshotHolder {
+                        "rootNode_": ChildrenNode {
+                          "children_": SortedMap {
+                            "comparator_": [Function],
+                            "root_": LLRBNode {
+                              "color": false,
+                              "key": ".info",
+                              "left": LLRBEmptyNode {},
+                              "right": LLRBEmptyNode {},
+                              "value": ChildrenNode {
+                                "children_": SortedMap {
+                                  "comparator_": [Function],
+                                  "root_": LLRBNode {
+                                    "color": false,
+                                    "key": "connected",
+                                    "left": LLRBEmptyNode {},
+                                    "right": LLRBEmptyNode {},
+                                    "value": LeafNode {
+                                      "lazyHash_": null,
+                                      "priorityNode_": ChildrenNode {
+                                        "children_": SortedMap {
+                                          "comparator_": [Function],
+                                          "root_": LLRBEmptyNode {},
+                                        },
+                                        "indexMap_": IndexMap {
+                                          "indexSet_": Object {
+                                            ".priority": PriorityIndex {},
+                                          },
+                                          "indexes_": Object {
+                                            ".priority": Object {},
+                                          },
+                                        },
+                                        "lazyHash_": null,
+                                        "priorityNode_": null,
+                                      },
+                                      "value_": false,
+                                    },
+                                  },
+                                },
+                                "indexMap_": IndexMap {
+                                  "indexSet_": Object {
+                                    ".priority": PriorityIndex {},
+                                  },
+                                  "indexes_": Object {
+                                    ".priority": Object {},
+                                  },
+                                },
+                                "lazyHash_": null,
+                                "priorityNode_": null,
+                              },
+                            },
+                          },
+                          "indexMap_": IndexMap {
+                            "indexSet_": Object {
+                              ".priority": PriorityIndex {},
+                            },
+                            "indexes_": Object {
+                              ".priority": Object {},
+                            },
+                          },
+                          "lazyHash_": null,
+                          "priorityNode_": null,
+                        },
+                      },
+                      "infoSyncTree_": SyncTree {
+                        "listenProvider_": Object {
+                          "startListening": [Function],
+                          "stopListening": [Function],
+                        },
+                        "pendingWriteTree_": WriteTree {
+                          "allWrites_": Array [],
+                          "lastWriteId_": -1,
+                          "visibleWrites_": CompoundWrite {
+                            "writeTree_": ImmutableTree {
+                              "children": SortedMap {
+                                "comparator_": [Function],
+                                "root_": LLRBEmptyNode {},
+                              },
+                              "value": null,
+                            },
+                          },
+                        },
+                        "queryToTagMap_": Object {},
+                        "syncPointTree_": ImmutableTree {
+                          "children": SortedMap {
+                            "comparator_": [Function],
+                            "root_": LLRBEmptyNode {},
+                          },
+                          "value": null,
+                        },
+                        "tagToQueryMap_": Object {},
+                      },
+                      "interceptServerDataCallback_": null,
+                      "nextWriteId_": 1,
+                      "onDisconnect_": SparseSnapshotTree {
+                        "children_": null,
+                        "value_": null,
+                      },
+                      "persistentConnection_": PersistentConnection {
+                        "authOverride_": undefined,
+                        "authTokenProvider_": AuthTokenProvider {
+                          "app_": [Circular],
+                        },
+                        "authToken_": null,
+                        "connected_": false,
+                        "establishConnectionTimer_": 2,
+                        "firstConnection_": true,
+                        "forceTokenRefresh_": false,
+                        "id": 0,
+                        "interruptReasons_": Object {},
+                        "invalidAuthTokenCount_": 0,
+                        "lastConnectionAttemptTime_": null,
+                        "lastConnectionEstablishedTime_": null,
+                        "lastSessionId": null,
+                        "listens_": Object {},
+                        "log_": [Function],
+                        "maxReconnectDelay_": 300000,
+                        "onConnectStatus_": [Function],
+                        "onDataUpdate_": [Function],
+                        "onDisconnectRequestQueue_": Array [],
+                        "onServerInfoUpdate_": [Function],
+                        "outstandingPutCount_": 0,
+                        "outstandingPuts_": Array [],
+                        "realtime_": null,
+                        "reconnectDelay_": 1000,
+                        "repoInfo_": RepoInfo {
+                          "domain": "firebaseio.com",
+                          "host": "trading-app-test.firebaseio.com",
+                          "internalHost": "trading-app-test.firebaseio.com",
+                          "namespace": "trading-app-test",
+                          "persistenceKey": "",
+                          "secure": true,
+                          "webSocketOnly": false,
+                        },
+                        "requestCBHash_": Object {},
+                        "requestNumber_": 0,
+                        "securityDebugCallback_": null,
+                        "visible_": true,
+                      },
+                      "repoInfo_": RepoInfo {
+                        "domain": "firebaseio.com",
+                        "host": "trading-app-test.firebaseio.com",
+                        "internalHost": "trading-app-test.firebaseio.com",
+                        "namespace": "trading-app-test",
+                        "persistenceKey": "",
+                        "secure": true,
+                        "webSocketOnly": false,
+                      },
+                      "serverSyncTree_": SyncTree {
+                        "listenProvider_": Object {
+                          "startListening": [Function],
+                          "stopListening": [Function],
+                        },
+                        "pendingWriteTree_": WriteTree {
+                          "allWrites_": Array [],
+                          "lastWriteId_": -1,
+                          "visibleWrites_": CompoundWrite {
+                            "writeTree_": ImmutableTree {
+                              "children": SortedMap {
+                                "comparator_": [Function],
+                                "root_": LLRBEmptyNode {},
+                              },
+                              "value": null,
+                            },
+                          },
+                        },
+                        "queryToTagMap_": Object {},
+                        "syncPointTree_": ImmutableTree {
+                          "children": SortedMap {
+                            "comparator_": [Function],
+                            "root_": LLRBEmptyNode {},
+                          },
+                          "value": null,
+                        },
+                        "tagToQueryMap_": Object {},
+                      },
+                      "server_": PersistentConnection {
+                        "authOverride_": undefined,
+                        "authTokenProvider_": AuthTokenProvider {
+                          "app_": [Circular],
+                        },
+                        "authToken_": null,
+                        "connected_": false,
+                        "establishConnectionTimer_": 2,
+                        "firstConnection_": true,
+                        "forceTokenRefresh_": false,
+                        "id": 0,
+                        "interruptReasons_": Object {},
+                        "invalidAuthTokenCount_": 0,
+                        "lastConnectionAttemptTime_": null,
+                        "lastConnectionEstablishedTime_": null,
+                        "lastSessionId": null,
+                        "listens_": Object {},
+                        "log_": [Function],
+                        "maxReconnectDelay_": 300000,
+                        "onConnectStatus_": [Function],
+                        "onDataUpdate_": [Function],
+                        "onDisconnectRequestQueue_": Array [],
+                        "onServerInfoUpdate_": [Function],
+                        "outstandingPutCount_": 0,
+                        "outstandingPuts_": Array [],
+                        "realtime_": null,
+                        "reconnectDelay_": 1000,
+                        "repoInfo_": RepoInfo {
+                          "domain": "firebaseio.com",
+                          "host": "trading-app-test.firebaseio.com",
+                          "internalHost": "trading-app-test.firebaseio.com",
+                          "namespace": "trading-app-test",
+                          "persistenceKey": "",
+                          "secure": true,
+                          "webSocketOnly": false,
+                        },
+                        "requestCBHash_": Object {},
+                        "requestNumber_": 0,
+                        "securityDebugCallback_": null,
+                        "visible_": true,
+                      },
+                      "statsListener_": null,
+                      "statsReporter_": StatsReporter {
+                        "server_": PersistentConnection {
+                          "authOverride_": undefined,
+                          "authTokenProvider_": AuthTokenProvider {
+                            "app_": [Circular],
+                          },
+                          "authToken_": null,
+                          "connected_": false,
+                          "establishConnectionTimer_": 2,
+                          "firstConnection_": true,
+                          "forceTokenRefresh_": false,
+                          "id": 0,
+                          "interruptReasons_": Object {},
+                          "invalidAuthTokenCount_": 0,
+                          "lastConnectionAttemptTime_": null,
+                          "lastConnectionEstablishedTime_": null,
+                          "lastSessionId": null,
+                          "listens_": Object {},
+                          "log_": [Function],
+                          "maxReconnectDelay_": 300000,
+                          "onConnectStatus_": [Function],
+                          "onDataUpdate_": [Function],
+                          "onDisconnectRequestQueue_": Array [],
+                          "onServerInfoUpdate_": [Function],
+                          "outstandingPutCount_": 0,
+                          "outstandingPuts_": Array [],
+                          "realtime_": null,
+                          "reconnectDelay_": 1000,
+                          "repoInfo_": RepoInfo {
+                            "domain": "firebaseio.com",
+                            "host": "trading-app-test.firebaseio.com",
+                            "internalHost": "trading-app-test.firebaseio.com",
+                            "namespace": "trading-app-test",
+                            "persistenceKey": "",
+                            "secure": true,
+                            "webSocketOnly": false,
+                          },
+                          "requestCBHash_": Object {},
+                          "requestNumber_": 0,
+                          "securityDebugCallback_": null,
+                          "visible_": true,
+                        },
+                        "statsListener_": StatsListener {
+                          "collection_": StatsCollection {
+                            "counters_": Object {},
+                          },
+                          "last_": null,
+                        },
+                        "statsToReport_": Object {},
+                      },
+                      "stats_": StatsCollection {
+                        "counters_": Object {},
+                      },
+                      "transactionQueueTree_": Tree {
+                        "name_": "",
+                        "node_": TreeNode {
+                          "childCount": 0,
+                          "children": Object {},
+                          "value": null,
+                        },
+                        "parent_": null,
+                      },
+                    },
+                    "root_": "https://trading-app-test.firebaseio.com/",
+                  },
+                },
+                "storage": Object {
+                  "[DEFAULT]": Service {
+                    "app_": [Circular],
+                    "authWrapper_": [Circular],
+                    "bucket_": Location {
+                      "bucket": "trading-app-test.appspot.com",
+                      "path_": "",
+                    },
+                    "internals_": ServiceInternals {
+                      "service_": [Circular],
+                    },
+                  },
+                },
+              },
+            },
+            "bucket_": "trading-app-test.appspot.com",
+            "deleted_": false,
+            "maxOperationRetryTime_": 120000,
+            "maxUploadRetryTime_": 60000,
+            "pool_": XhrIoPool {},
+            "requestMaker_": [Function],
+            "requestMap_": RequestMap {
+              "id_": -9007199254740991,
+              "map_": Object {},
+            },
+            "service_": Service {
+              "app_": FirebaseAppImpl {
+                "INTERNAL": Object {
+                  "addAuthTokenListener": [Function],
+                  "getToken": [Function],
+                  "getUid": [Function],
+                  "removeAuthTokenListener": [Function],
+                },
+                "firebase_": Object {
+                  "INTERNAL": Object {
+                    "ErrorFactory": [Function],
+                    "Promise": [Function],
+                    "createFirebaseNamespace": [Function],
+                    "createSubscribe": [Function],
+                    "deepExtend": [Function],
+                    "extendNamespace": [Function],
+                    "factories": Object {
+                      "auth": [Function],
+                      "database": [Function],
+                      "storage": [Function],
+                    },
+                    "node": Object {
+                      "XMLHttpRequest": [Function],
+                      "localStorage": Storage {},
+                      "sessionStorage": Storage {},
+                    },
+                    "registerService": [Function],
+                    "removeApp": [Function],
+                    "useAsService": [Function],
+                  },
+                  "Promise": [Function],
+                  "SDK_VERSION": "4.2.0",
+                  "User": [Function],
+                  "__esModule": true,
+                  "app": [Function],
+                  "apps": Array [
+                    [Circular],
+                  ],
+                  "auth": [Function],
+                  "database": [Function],
+                  "default": [Circular],
+                  "initializeApp": [Function],
+                  "storage": [Function],
+                },
+                "isDeleted_": false,
+                "name_": "[DEFAULT]",
+                "options_": Object {
+                  "apiKey": "AIzaSyAtpT9y22RfEQRF0kugKRuP2ORGNYRQ8W0",
+                  "authDomain": "trading-app-test.firebaseapp.com",
+                  "databaseURL": "https://trading-app-test.firebaseio.com",
+                  "messagingSenderId": "801758573787",
+                  "projectId": "trading-app-test",
+                  "storageBucket": "trading-app-test.appspot.com",
+                },
+                "services_": Object {
+                  "auth": Object {
+                    "[DEFAULT]": Object {
+                      "apiKey": "AIzaSyAtpT9y22RfEQRF0kugKRuP2ORGNYRQ8W0",
+                      "appName": "[DEFAULT]",
+                      "authDomain": "trading-app-test.firebaseapp.com",
+                      "currentUser": null,
+                    },
+                  },
+                  "database": Object {
+                    "[DEFAULT]": Database {
+                      "INTERNAL": DatabaseInternals {
+                        "database": [Circular],
+                      },
+                      "repo_": Repo {
+                        "__database": [Circular],
+                        "app": [Circular],
+                        "dataUpdateCount": 0,
+                        "eventQueue_": EventQueue {
+                          "eventLists_": Array [],
+                          "recursionDepth_": 0,
+                        },
+                        "infoData_": SnapshotHolder {
+                          "rootNode_": ChildrenNode {
+                            "children_": SortedMap {
+                              "comparator_": [Function],
+                              "root_": LLRBNode {
+                                "color": false,
+                                "key": ".info",
+                                "left": LLRBEmptyNode {},
+                                "right": LLRBEmptyNode {},
+                                "value": ChildrenNode {
+                                  "children_": SortedMap {
+                                    "comparator_": [Function],
+                                    "root_": LLRBNode {
+                                      "color": false,
+                                      "key": "connected",
+                                      "left": LLRBEmptyNode {},
+                                      "right": LLRBEmptyNode {},
+                                      "value": LeafNode {
+                                        "lazyHash_": null,
+                                        "priorityNode_": ChildrenNode {
+                                          "children_": SortedMap {
+                                            "comparator_": [Function],
+                                            "root_": LLRBEmptyNode {},
+                                          },
+                                          "indexMap_": IndexMap {
+                                            "indexSet_": Object {
+                                              ".priority": PriorityIndex {},
+                                            },
+                                            "indexes_": Object {
+                                              ".priority": Object {},
+                                            },
+                                          },
+                                          "lazyHash_": null,
+                                          "priorityNode_": null,
+                                        },
+                                        "value_": false,
+                                      },
+                                    },
+                                  },
+                                  "indexMap_": IndexMap {
+                                    "indexSet_": Object {
+                                      ".priority": PriorityIndex {},
+                                    },
+                                    "indexes_": Object {
+                                      ".priority": Object {},
+                                    },
+                                  },
+                                  "lazyHash_": null,
+                                  "priorityNode_": null,
+                                },
+                              },
+                            },
+                            "indexMap_": IndexMap {
+                              "indexSet_": Object {
+                                ".priority": PriorityIndex {},
+                              },
+                              "indexes_": Object {
+                                ".priority": Object {},
+                              },
+                            },
+                            "lazyHash_": null,
+                            "priorityNode_": null,
+                          },
+                        },
+                        "infoSyncTree_": SyncTree {
+                          "listenProvider_": Object {
+                            "startListening": [Function],
+                            "stopListening": [Function],
+                          },
+                          "pendingWriteTree_": WriteTree {
+                            "allWrites_": Array [],
+                            "lastWriteId_": -1,
+                            "visibleWrites_": CompoundWrite {
+                              "writeTree_": ImmutableTree {
+                                "children": SortedMap {
+                                  "comparator_": [Function],
+                                  "root_": LLRBEmptyNode {},
+                                },
+                                "value": null,
+                              },
+                            },
+                          },
+                          "queryToTagMap_": Object {},
+                          "syncPointTree_": ImmutableTree {
+                            "children": SortedMap {
+                              "comparator_": [Function],
+                              "root_": LLRBEmptyNode {},
+                            },
+                            "value": null,
+                          },
+                          "tagToQueryMap_": Object {},
+                        },
+                        "interceptServerDataCallback_": null,
+                        "nextWriteId_": 1,
+                        "onDisconnect_": SparseSnapshotTree {
+                          "children_": null,
+                          "value_": null,
+                        },
+                        "persistentConnection_": PersistentConnection {
+                          "authOverride_": undefined,
+                          "authTokenProvider_": AuthTokenProvider {
+                            "app_": [Circular],
+                          },
+                          "authToken_": null,
+                          "connected_": false,
+                          "establishConnectionTimer_": 2,
+                          "firstConnection_": true,
+                          "forceTokenRefresh_": false,
+                          "id": 0,
+                          "interruptReasons_": Object {},
+                          "invalidAuthTokenCount_": 0,
+                          "lastConnectionAttemptTime_": null,
+                          "lastConnectionEstablishedTime_": null,
+                          "lastSessionId": null,
+                          "listens_": Object {},
+                          "log_": [Function],
+                          "maxReconnectDelay_": 300000,
+                          "onConnectStatus_": [Function],
+                          "onDataUpdate_": [Function],
+                          "onDisconnectRequestQueue_": Array [],
+                          "onServerInfoUpdate_": [Function],
+                          "outstandingPutCount_": 0,
+                          "outstandingPuts_": Array [],
+                          "realtime_": null,
+                          "reconnectDelay_": 1000,
+                          "repoInfo_": RepoInfo {
+                            "domain": "firebaseio.com",
+                            "host": "trading-app-test.firebaseio.com",
+                            "internalHost": "trading-app-test.firebaseio.com",
+                            "namespace": "trading-app-test",
+                            "persistenceKey": "",
+                            "secure": true,
+                            "webSocketOnly": false,
+                          },
+                          "requestCBHash_": Object {},
+                          "requestNumber_": 0,
+                          "securityDebugCallback_": null,
+                          "visible_": true,
+                        },
+                        "repoInfo_": RepoInfo {
+                          "domain": "firebaseio.com",
+                          "host": "trading-app-test.firebaseio.com",
+                          "internalHost": "trading-app-test.firebaseio.com",
+                          "namespace": "trading-app-test",
+                          "persistenceKey": "",
+                          "secure": true,
+                          "webSocketOnly": false,
+                        },
+                        "serverSyncTree_": SyncTree {
+                          "listenProvider_": Object {
+                            "startListening": [Function],
+                            "stopListening": [Function],
+                          },
+                          "pendingWriteTree_": WriteTree {
+                            "allWrites_": Array [],
+                            "lastWriteId_": -1,
+                            "visibleWrites_": CompoundWrite {
+                              "writeTree_": ImmutableTree {
+                                "children": SortedMap {
+                                  "comparator_": [Function],
+                                  "root_": LLRBEmptyNode {},
+                                },
+                                "value": null,
+                              },
+                            },
+                          },
+                          "queryToTagMap_": Object {},
+                          "syncPointTree_": ImmutableTree {
+                            "children": SortedMap {
+                              "comparator_": [Function],
+                              "root_": LLRBEmptyNode {},
+                            },
+                            "value": null,
+                          },
+                          "tagToQueryMap_": Object {},
+                        },
+                        "server_": PersistentConnection {
+                          "authOverride_": undefined,
+                          "authTokenProvider_": AuthTokenProvider {
+                            "app_": [Circular],
+                          },
+                          "authToken_": null,
+                          "connected_": false,
+                          "establishConnectionTimer_": 2,
+                          "firstConnection_": true,
+                          "forceTokenRefresh_": false,
+                          "id": 0,
+                          "interruptReasons_": Object {},
+                          "invalidAuthTokenCount_": 0,
+                          "lastConnectionAttemptTime_": null,
+                          "lastConnectionEstablishedTime_": null,
+                          "lastSessionId": null,
+                          "listens_": Object {},
+                          "log_": [Function],
+                          "maxReconnectDelay_": 300000,
+                          "onConnectStatus_": [Function],
+                          "onDataUpdate_": [Function],
+                          "onDisconnectRequestQueue_": Array [],
+                          "onServerInfoUpdate_": [Function],
+                          "outstandingPutCount_": 0,
+                          "outstandingPuts_": Array [],
+                          "realtime_": null,
+                          "reconnectDelay_": 1000,
+                          "repoInfo_": RepoInfo {
+                            "domain": "firebaseio.com",
+                            "host": "trading-app-test.firebaseio.com",
+                            "internalHost": "trading-app-test.firebaseio.com",
+                            "namespace": "trading-app-test",
+                            "persistenceKey": "",
+                            "secure": true,
+                            "webSocketOnly": false,
+                          },
+                          "requestCBHash_": Object {},
+                          "requestNumber_": 0,
+                          "securityDebugCallback_": null,
+                          "visible_": true,
+                        },
+                        "statsListener_": null,
+                        "statsReporter_": StatsReporter {
+                          "server_": PersistentConnection {
+                            "authOverride_": undefined,
+                            "authTokenProvider_": AuthTokenProvider {
+                              "app_": [Circular],
+                            },
+                            "authToken_": null,
+                            "connected_": false,
+                            "establishConnectionTimer_": 2,
+                            "firstConnection_": true,
+                            "forceTokenRefresh_": false,
+                            "id": 0,
+                            "interruptReasons_": Object {},
+                            "invalidAuthTokenCount_": 0,
+                            "lastConnectionAttemptTime_": null,
+                            "lastConnectionEstablishedTime_": null,
+                            "lastSessionId": null,
+                            "listens_": Object {},
+                            "log_": [Function],
+                            "maxReconnectDelay_": 300000,
+                            "onConnectStatus_": [Function],
+                            "onDataUpdate_": [Function],
+                            "onDisconnectRequestQueue_": Array [],
+                            "onServerInfoUpdate_": [Function],
+                            "outstandingPutCount_": 0,
+                            "outstandingPuts_": Array [],
+                            "realtime_": null,
+                            "reconnectDelay_": 1000,
+                            "repoInfo_": RepoInfo {
+                              "domain": "firebaseio.com",
+                              "host": "trading-app-test.firebaseio.com",
+                              "internalHost": "trading-app-test.firebaseio.com",
+                              "namespace": "trading-app-test",
+                              "persistenceKey": "",
+                              "secure": true,
+                              "webSocketOnly": false,
+                            },
+                            "requestCBHash_": Object {},
+                            "requestNumber_": 0,
+                            "securityDebugCallback_": null,
+                            "visible_": true,
+                          },
+                          "statsListener_": StatsListener {
+                            "collection_": StatsCollection {
+                              "counters_": Object {},
+                            },
+                            "last_": null,
+                          },
+                          "statsToReport_": Object {},
+                        },
+                        "stats_": StatsCollection {
+                          "counters_": Object {},
+                        },
+                        "transactionQueueTree_": Tree {
+                          "name_": "",
+                          "node_": TreeNode {
+                            "childCount": 0,
+                            "children": Object {},
+                            "value": null,
+                          },
+                          "parent_": null,
+                        },
+                      },
+                      "root_": "https://trading-app-test.firebaseio.com/",
+                    },
+                  },
+                  "storage": Object {
+                    "[DEFAULT]": [Circular],
+                  },
+                },
+              },
+              "authWrapper_": [Circular],
+              "bucket_": Location {
+                "bucket": "trading-app-test.appspot.com",
+                "path_": "",
+              },
+              "internals_": ServiceInternals {
+                "service_": [Circular],
+              },
+            },
+            "storageRefMaker_": [Function],
+          },
+          "location": Location {
+            "bucket": "trading-app-test.appspot.com",
+            "path_": "images",
+          },
+        }
+      }
+    />
+  </label>
+  <input
+    autoFocus={true}
+    className="text-input"
+    onChange={[Function]}
+    placeholder="What are you trading?"
+    type="text"
+    value=""
+  />
+  <input
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Price"
+    type="text"
+    value=""
+  />
+  <input
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Select Category"
+    type="text"
+    value=""
+  />
+  <input
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Location"
+    type="text"
+    value=""
+  />
+  <input
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Decription"
+    type="text"
+    value=""
+  />
+  <div>
+    <button
+      className="button"
+    >
+      Save Item
+    </button>
+  </div>
+</form>
+`;
+
+exports[`should render error for invalid form submission 2`] = `
+<form
+  className="form"
+  onSubmit={[Function]}
+>
+  <div
+    className="form-image-list"
+  />
+  <label
+    className="form-image"
+  >
+    + Add Image(s)
+    <FirebaseFileUploader
+      accept="image/*"
+      hidden={true}
+      multiple={true}
+      name="item"
+      onProgress={[Function]}
+      onUploadError={[Function]}
+      onUploadStart={[Function]}
+      onUploadSuccess={[Function]}
+      randomizeFilename={true}
+      storageRef={
+        Reference {
+          "authWrapper": AuthWrapper {
+            "app_": FirebaseAppImpl {
+              "INTERNAL": Object {
+                "addAuthTokenListener": [Function],
+                "getToken": [Function],
+                "getUid": [Function],
+                "removeAuthTokenListener": [Function],
+              },
+              "firebase_": Object {
+                "INTERNAL": Object {
+                  "ErrorFactory": [Function],
+                  "Promise": [Function],
+                  "createFirebaseNamespace": [Function],
+                  "createSubscribe": [Function],
+                  "deepExtend": [Function],
+                  "extendNamespace": [Function],
+                  "factories": Object {
+                    "auth": [Function],
+                    "database": [Function],
+                    "storage": [Function],
+                  },
+                  "node": Object {
+                    "XMLHttpRequest": [Function],
+                    "localStorage": Storage {},
+                    "sessionStorage": Storage {},
+                  },
+                  "registerService": [Function],
+                  "removeApp": [Function],
+                  "useAsService": [Function],
+                },
+                "Promise": [Function],
+                "SDK_VERSION": "4.2.0",
+                "User": [Function],
+                "__esModule": true,
+                "app": [Function],
+                "apps": Array [
+                  [Circular],
+                ],
+                "auth": [Function],
+                "database": [Function],
+                "default": [Circular],
+                "initializeApp": [Function],
+                "storage": [Function],
+              },
+              "isDeleted_": false,
+              "name_": "[DEFAULT]",
+              "options_": Object {
+                "apiKey": "AIzaSyAtpT9y22RfEQRF0kugKRuP2ORGNYRQ8W0",
+                "authDomain": "trading-app-test.firebaseapp.com",
+                "databaseURL": "https://trading-app-test.firebaseio.com",
+                "messagingSenderId": "801758573787",
+                "projectId": "trading-app-test",
+                "storageBucket": "trading-app-test.appspot.com",
+              },
+              "services_": Object {
+                "auth": Object {
+                  "[DEFAULT]": Object {
+                    "apiKey": "AIzaSyAtpT9y22RfEQRF0kugKRuP2ORGNYRQ8W0",
+                    "appName": "[DEFAULT]",
+                    "authDomain": "trading-app-test.firebaseapp.com",
+                    "currentUser": null,
+                  },
+                },
+                "database": Object {
+                  "[DEFAULT]": Database {
+                    "INTERNAL": DatabaseInternals {
+                      "database": [Circular],
+                    },
+                    "repo_": Repo {
+                      "__database": [Circular],
+                      "app": [Circular],
+                      "dataUpdateCount": 0,
+                      "eventQueue_": EventQueue {
+                        "eventLists_": Array [],
+                        "recursionDepth_": 0,
+                      },
+                      "infoData_": SnapshotHolder {
+                        "rootNode_": ChildrenNode {
+                          "children_": SortedMap {
+                            "comparator_": [Function],
+                            "root_": LLRBNode {
+                              "color": false,
+                              "key": ".info",
+                              "left": LLRBEmptyNode {},
+                              "right": LLRBEmptyNode {},
+                              "value": ChildrenNode {
+                                "children_": SortedMap {
+                                  "comparator_": [Function],
+                                  "root_": LLRBNode {
+                                    "color": false,
+                                    "key": "connected",
+                                    "left": LLRBEmptyNode {},
+                                    "right": LLRBEmptyNode {},
+                                    "value": LeafNode {
+                                      "lazyHash_": null,
+                                      "priorityNode_": ChildrenNode {
+                                        "children_": SortedMap {
+                                          "comparator_": [Function],
+                                          "root_": LLRBEmptyNode {},
+                                        },
+                                        "indexMap_": IndexMap {
+                                          "indexSet_": Object {
+                                            ".priority": PriorityIndex {},
+                                          },
+                                          "indexes_": Object {
+                                            ".priority": Object {},
+                                          },
+                                        },
+                                        "lazyHash_": null,
+                                        "priorityNode_": null,
+                                      },
+                                      "value_": false,
+                                    },
+                                  },
+                                },
+                                "indexMap_": IndexMap {
+                                  "indexSet_": Object {
+                                    ".priority": PriorityIndex {},
+                                  },
+                                  "indexes_": Object {
+                                    ".priority": Object {},
+                                  },
+                                },
+                                "lazyHash_": null,
+                                "priorityNode_": null,
+                              },
+                            },
+                          },
+                          "indexMap_": IndexMap {
+                            "indexSet_": Object {
+                              ".priority": PriorityIndex {},
+                            },
+                            "indexes_": Object {
+                              ".priority": Object {},
+                            },
+                          },
+                          "lazyHash_": null,
+                          "priorityNode_": null,
+                        },
+                      },
+                      "infoSyncTree_": SyncTree {
+                        "listenProvider_": Object {
+                          "startListening": [Function],
+                          "stopListening": [Function],
+                        },
+                        "pendingWriteTree_": WriteTree {
+                          "allWrites_": Array [],
+                          "lastWriteId_": -1,
+                          "visibleWrites_": CompoundWrite {
+                            "writeTree_": ImmutableTree {
+                              "children": SortedMap {
+                                "comparator_": [Function],
+                                "root_": LLRBEmptyNode {},
+                              },
+                              "value": null,
+                            },
+                          },
+                        },
+                        "queryToTagMap_": Object {},
+                        "syncPointTree_": ImmutableTree {
+                          "children": SortedMap {
+                            "comparator_": [Function],
+                            "root_": LLRBEmptyNode {},
+                          },
+                          "value": null,
+                        },
+                        "tagToQueryMap_": Object {},
+                      },
+                      "interceptServerDataCallback_": null,
+                      "nextWriteId_": 1,
+                      "onDisconnect_": SparseSnapshotTree {
+                        "children_": null,
+                        "value_": null,
+                      },
+                      "persistentConnection_": PersistentConnection {
+                        "authOverride_": undefined,
+                        "authTokenProvider_": AuthTokenProvider {
+                          "app_": [Circular],
+                        },
+                        "authToken_": null,
+                        "connected_": false,
+                        "establishConnectionTimer_": 2,
+                        "firstConnection_": true,
+                        "forceTokenRefresh_": false,
+                        "id": 0,
+                        "interruptReasons_": Object {},
+                        "invalidAuthTokenCount_": 0,
+                        "lastConnectionAttemptTime_": null,
+                        "lastConnectionEstablishedTime_": null,
+                        "lastSessionId": null,
+                        "listens_": Object {},
+                        "log_": [Function],
+                        "maxReconnectDelay_": 300000,
+                        "onConnectStatus_": [Function],
+                        "onDataUpdate_": [Function],
+                        "onDisconnectRequestQueue_": Array [],
+                        "onServerInfoUpdate_": [Function],
+                        "outstandingPutCount_": 0,
+                        "outstandingPuts_": Array [],
+                        "realtime_": null,
+                        "reconnectDelay_": 1000,
+                        "repoInfo_": RepoInfo {
+                          "domain": "firebaseio.com",
+                          "host": "trading-app-test.firebaseio.com",
+                          "internalHost": "trading-app-test.firebaseio.com",
+                          "namespace": "trading-app-test",
+                          "persistenceKey": "",
+                          "secure": true,
+                          "webSocketOnly": false,
+                        },
+                        "requestCBHash_": Object {},
+                        "requestNumber_": 0,
+                        "securityDebugCallback_": null,
+                        "visible_": true,
+                      },
+                      "repoInfo_": RepoInfo {
+                        "domain": "firebaseio.com",
+                        "host": "trading-app-test.firebaseio.com",
+                        "internalHost": "trading-app-test.firebaseio.com",
+                        "namespace": "trading-app-test",
+                        "persistenceKey": "",
+                        "secure": true,
+                        "webSocketOnly": false,
+                      },
+                      "serverSyncTree_": SyncTree {
+                        "listenProvider_": Object {
+                          "startListening": [Function],
+                          "stopListening": [Function],
+                        },
+                        "pendingWriteTree_": WriteTree {
+                          "allWrites_": Array [],
+                          "lastWriteId_": -1,
+                          "visibleWrites_": CompoundWrite {
+                            "writeTree_": ImmutableTree {
+                              "children": SortedMap {
+                                "comparator_": [Function],
+                                "root_": LLRBEmptyNode {},
+                              },
+                              "value": null,
+                            },
+                          },
+                        },
+                        "queryToTagMap_": Object {},
+                        "syncPointTree_": ImmutableTree {
+                          "children": SortedMap {
+                            "comparator_": [Function],
+                            "root_": LLRBEmptyNode {},
+                          },
+                          "value": null,
+                        },
+                        "tagToQueryMap_": Object {},
+                      },
+                      "server_": PersistentConnection {
+                        "authOverride_": undefined,
+                        "authTokenProvider_": AuthTokenProvider {
+                          "app_": [Circular],
+                        },
+                        "authToken_": null,
+                        "connected_": false,
+                        "establishConnectionTimer_": 2,
+                        "firstConnection_": true,
+                        "forceTokenRefresh_": false,
+                        "id": 0,
+                        "interruptReasons_": Object {},
+                        "invalidAuthTokenCount_": 0,
+                        "lastConnectionAttemptTime_": null,
+                        "lastConnectionEstablishedTime_": null,
+                        "lastSessionId": null,
+                        "listens_": Object {},
+                        "log_": [Function],
+                        "maxReconnectDelay_": 300000,
+                        "onConnectStatus_": [Function],
+                        "onDataUpdate_": [Function],
+                        "onDisconnectRequestQueue_": Array [],
+                        "onServerInfoUpdate_": [Function],
+                        "outstandingPutCount_": 0,
+                        "outstandingPuts_": Array [],
+                        "realtime_": null,
+                        "reconnectDelay_": 1000,
+                        "repoInfo_": RepoInfo {
+                          "domain": "firebaseio.com",
+                          "host": "trading-app-test.firebaseio.com",
+                          "internalHost": "trading-app-test.firebaseio.com",
+                          "namespace": "trading-app-test",
+                          "persistenceKey": "",
+                          "secure": true,
+                          "webSocketOnly": false,
+                        },
+                        "requestCBHash_": Object {},
+                        "requestNumber_": 0,
+                        "securityDebugCallback_": null,
+                        "visible_": true,
+                      },
+                      "statsListener_": null,
+                      "statsReporter_": StatsReporter {
+                        "server_": PersistentConnection {
+                          "authOverride_": undefined,
+                          "authTokenProvider_": AuthTokenProvider {
+                            "app_": [Circular],
+                          },
+                          "authToken_": null,
+                          "connected_": false,
+                          "establishConnectionTimer_": 2,
+                          "firstConnection_": true,
+                          "forceTokenRefresh_": false,
+                          "id": 0,
+                          "interruptReasons_": Object {},
+                          "invalidAuthTokenCount_": 0,
+                          "lastConnectionAttemptTime_": null,
+                          "lastConnectionEstablishedTime_": null,
+                          "lastSessionId": null,
+                          "listens_": Object {},
+                          "log_": [Function],
+                          "maxReconnectDelay_": 300000,
+                          "onConnectStatus_": [Function],
+                          "onDataUpdate_": [Function],
+                          "onDisconnectRequestQueue_": Array [],
+                          "onServerInfoUpdate_": [Function],
+                          "outstandingPutCount_": 0,
+                          "outstandingPuts_": Array [],
+                          "realtime_": null,
+                          "reconnectDelay_": 1000,
+                          "repoInfo_": RepoInfo {
+                            "domain": "firebaseio.com",
+                            "host": "trading-app-test.firebaseio.com",
+                            "internalHost": "trading-app-test.firebaseio.com",
+                            "namespace": "trading-app-test",
+                            "persistenceKey": "",
+                            "secure": true,
+                            "webSocketOnly": false,
+                          },
+                          "requestCBHash_": Object {},
+                          "requestNumber_": 0,
+                          "securityDebugCallback_": null,
+                          "visible_": true,
+                        },
+                        "statsListener_": StatsListener {
+                          "collection_": StatsCollection {
+                            "counters_": Object {},
+                          },
+                          "last_": null,
+                        },
+                        "statsToReport_": Object {},
+                      },
+                      "stats_": StatsCollection {
+                        "counters_": Object {},
+                      },
+                      "transactionQueueTree_": Tree {
+                        "name_": "",
+                        "node_": TreeNode {
+                          "childCount": 0,
+                          "children": Object {},
+                          "value": null,
+                        },
+                        "parent_": null,
+                      },
+                    },
+                    "root_": "https://trading-app-test.firebaseio.com/",
+                  },
+                },
+                "storage": Object {
+                  "[DEFAULT]": Service {
+                    "app_": [Circular],
+                    "authWrapper_": [Circular],
+                    "bucket_": Location {
+                      "bucket": "trading-app-test.appspot.com",
+                      "path_": "",
+                    },
+                    "internals_": ServiceInternals {
+                      "service_": [Circular],
+                    },
+                  },
+                },
+              },
+            },
+            "bucket_": "trading-app-test.appspot.com",
+            "deleted_": false,
+            "maxOperationRetryTime_": 120000,
+            "maxUploadRetryTime_": 60000,
+            "pool_": XhrIoPool {},
+            "requestMaker_": [Function],
+            "requestMap_": RequestMap {
+              "id_": -9007199254740991,
+              "map_": Object {},
+            },
+            "service_": Service {
+              "app_": FirebaseAppImpl {
+                "INTERNAL": Object {
+                  "addAuthTokenListener": [Function],
+                  "getToken": [Function],
+                  "getUid": [Function],
+                  "removeAuthTokenListener": [Function],
+                },
+                "firebase_": Object {
+                  "INTERNAL": Object {
+                    "ErrorFactory": [Function],
+                    "Promise": [Function],
+                    "createFirebaseNamespace": [Function],
+                    "createSubscribe": [Function],
+                    "deepExtend": [Function],
+                    "extendNamespace": [Function],
+                    "factories": Object {
+                      "auth": [Function],
+                      "database": [Function],
+                      "storage": [Function],
+                    },
+                    "node": Object {
+                      "XMLHttpRequest": [Function],
+                      "localStorage": Storage {},
+                      "sessionStorage": Storage {},
+                    },
+                    "registerService": [Function],
+                    "removeApp": [Function],
+                    "useAsService": [Function],
+                  },
+                  "Promise": [Function],
+                  "SDK_VERSION": "4.2.0",
+                  "User": [Function],
+                  "__esModule": true,
+                  "app": [Function],
+                  "apps": Array [
+                    [Circular],
+                  ],
+                  "auth": [Function],
+                  "database": [Function],
+                  "default": [Circular],
+                  "initializeApp": [Function],
+                  "storage": [Function],
+                },
+                "isDeleted_": false,
+                "name_": "[DEFAULT]",
+                "options_": Object {
+                  "apiKey": "AIzaSyAtpT9y22RfEQRF0kugKRuP2ORGNYRQ8W0",
+                  "authDomain": "trading-app-test.firebaseapp.com",
+                  "databaseURL": "https://trading-app-test.firebaseio.com",
+                  "messagingSenderId": "801758573787",
+                  "projectId": "trading-app-test",
+                  "storageBucket": "trading-app-test.appspot.com",
+                },
+                "services_": Object {
+                  "auth": Object {
+                    "[DEFAULT]": Object {
+                      "apiKey": "AIzaSyAtpT9y22RfEQRF0kugKRuP2ORGNYRQ8W0",
+                      "appName": "[DEFAULT]",
+                      "authDomain": "trading-app-test.firebaseapp.com",
+                      "currentUser": null,
+                    },
+                  },
+                  "database": Object {
+                    "[DEFAULT]": Database {
+                      "INTERNAL": DatabaseInternals {
+                        "database": [Circular],
+                      },
+                      "repo_": Repo {
+                        "__database": [Circular],
+                        "app": [Circular],
+                        "dataUpdateCount": 0,
+                        "eventQueue_": EventQueue {
+                          "eventLists_": Array [],
+                          "recursionDepth_": 0,
+                        },
+                        "infoData_": SnapshotHolder {
+                          "rootNode_": ChildrenNode {
+                            "children_": SortedMap {
+                              "comparator_": [Function],
+                              "root_": LLRBNode {
+                                "color": false,
+                                "key": ".info",
+                                "left": LLRBEmptyNode {},
+                                "right": LLRBEmptyNode {},
+                                "value": ChildrenNode {
+                                  "children_": SortedMap {
+                                    "comparator_": [Function],
+                                    "root_": LLRBNode {
+                                      "color": false,
+                                      "key": "connected",
+                                      "left": LLRBEmptyNode {},
+                                      "right": LLRBEmptyNode {},
+                                      "value": LeafNode {
+                                        "lazyHash_": null,
+                                        "priorityNode_": ChildrenNode {
+                                          "children_": SortedMap {
+                                            "comparator_": [Function],
+                                            "root_": LLRBEmptyNode {},
+                                          },
+                                          "indexMap_": IndexMap {
+                                            "indexSet_": Object {
+                                              ".priority": PriorityIndex {},
+                                            },
+                                            "indexes_": Object {
+                                              ".priority": Object {},
+                                            },
+                                          },
+                                          "lazyHash_": null,
+                                          "priorityNode_": null,
+                                        },
+                                        "value_": false,
+                                      },
+                                    },
+                                  },
+                                  "indexMap_": IndexMap {
+                                    "indexSet_": Object {
+                                      ".priority": PriorityIndex {},
+                                    },
+                                    "indexes_": Object {
+                                      ".priority": Object {},
+                                    },
+                                  },
+                                  "lazyHash_": null,
+                                  "priorityNode_": null,
+                                },
+                              },
+                            },
+                            "indexMap_": IndexMap {
+                              "indexSet_": Object {
+                                ".priority": PriorityIndex {},
+                              },
+                              "indexes_": Object {
+                                ".priority": Object {},
+                              },
+                            },
+                            "lazyHash_": null,
+                            "priorityNode_": null,
+                          },
+                        },
+                        "infoSyncTree_": SyncTree {
+                          "listenProvider_": Object {
+                            "startListening": [Function],
+                            "stopListening": [Function],
+                          },
+                          "pendingWriteTree_": WriteTree {
+                            "allWrites_": Array [],
+                            "lastWriteId_": -1,
+                            "visibleWrites_": CompoundWrite {
+                              "writeTree_": ImmutableTree {
+                                "children": SortedMap {
+                                  "comparator_": [Function],
+                                  "root_": LLRBEmptyNode {},
+                                },
+                                "value": null,
+                              },
+                            },
+                          },
+                          "queryToTagMap_": Object {},
+                          "syncPointTree_": ImmutableTree {
+                            "children": SortedMap {
+                              "comparator_": [Function],
+                              "root_": LLRBEmptyNode {},
+                            },
+                            "value": null,
+                          },
+                          "tagToQueryMap_": Object {},
+                        },
+                        "interceptServerDataCallback_": null,
+                        "nextWriteId_": 1,
+                        "onDisconnect_": SparseSnapshotTree {
+                          "children_": null,
+                          "value_": null,
+                        },
+                        "persistentConnection_": PersistentConnection {
+                          "authOverride_": undefined,
+                          "authTokenProvider_": AuthTokenProvider {
+                            "app_": [Circular],
+                          },
+                          "authToken_": null,
+                          "connected_": false,
+                          "establishConnectionTimer_": 2,
+                          "firstConnection_": true,
+                          "forceTokenRefresh_": false,
+                          "id": 0,
+                          "interruptReasons_": Object {},
+                          "invalidAuthTokenCount_": 0,
+                          "lastConnectionAttemptTime_": null,
+                          "lastConnectionEstablishedTime_": null,
+                          "lastSessionId": null,
+                          "listens_": Object {},
+                          "log_": [Function],
+                          "maxReconnectDelay_": 300000,
+                          "onConnectStatus_": [Function],
+                          "onDataUpdate_": [Function],
+                          "onDisconnectRequestQueue_": Array [],
+                          "onServerInfoUpdate_": [Function],
+                          "outstandingPutCount_": 0,
+                          "outstandingPuts_": Array [],
+                          "realtime_": null,
+                          "reconnectDelay_": 1000,
+                          "repoInfo_": RepoInfo {
+                            "domain": "firebaseio.com",
+                            "host": "trading-app-test.firebaseio.com",
+                            "internalHost": "trading-app-test.firebaseio.com",
+                            "namespace": "trading-app-test",
+                            "persistenceKey": "",
+                            "secure": true,
+                            "webSocketOnly": false,
+                          },
+                          "requestCBHash_": Object {},
+                          "requestNumber_": 0,
+                          "securityDebugCallback_": null,
+                          "visible_": true,
+                        },
+                        "repoInfo_": RepoInfo {
+                          "domain": "firebaseio.com",
+                          "host": "trading-app-test.firebaseio.com",
+                          "internalHost": "trading-app-test.firebaseio.com",
+                          "namespace": "trading-app-test",
+                          "persistenceKey": "",
+                          "secure": true,
+                          "webSocketOnly": false,
+                        },
+                        "serverSyncTree_": SyncTree {
+                          "listenProvider_": Object {
+                            "startListening": [Function],
+                            "stopListening": [Function],
+                          },
+                          "pendingWriteTree_": WriteTree {
+                            "allWrites_": Array [],
+                            "lastWriteId_": -1,
+                            "visibleWrites_": CompoundWrite {
+                              "writeTree_": ImmutableTree {
+                                "children": SortedMap {
+                                  "comparator_": [Function],
+                                  "root_": LLRBEmptyNode {},
+                                },
+                                "value": null,
+                              },
+                            },
+                          },
+                          "queryToTagMap_": Object {},
+                          "syncPointTree_": ImmutableTree {
+                            "children": SortedMap {
+                              "comparator_": [Function],
+                              "root_": LLRBEmptyNode {},
+                            },
+                            "value": null,
+                          },
+                          "tagToQueryMap_": Object {},
+                        },
+                        "server_": PersistentConnection {
+                          "authOverride_": undefined,
+                          "authTokenProvider_": AuthTokenProvider {
+                            "app_": [Circular],
+                          },
+                          "authToken_": null,
+                          "connected_": false,
+                          "establishConnectionTimer_": 2,
+                          "firstConnection_": true,
+                          "forceTokenRefresh_": false,
+                          "id": 0,
+                          "interruptReasons_": Object {},
+                          "invalidAuthTokenCount_": 0,
+                          "lastConnectionAttemptTime_": null,
+                          "lastConnectionEstablishedTime_": null,
+                          "lastSessionId": null,
+                          "listens_": Object {},
+                          "log_": [Function],
+                          "maxReconnectDelay_": 300000,
+                          "onConnectStatus_": [Function],
+                          "onDataUpdate_": [Function],
+                          "onDisconnectRequestQueue_": Array [],
+                          "onServerInfoUpdate_": [Function],
+                          "outstandingPutCount_": 0,
+                          "outstandingPuts_": Array [],
+                          "realtime_": null,
+                          "reconnectDelay_": 1000,
+                          "repoInfo_": RepoInfo {
+                            "domain": "firebaseio.com",
+                            "host": "trading-app-test.firebaseio.com",
+                            "internalHost": "trading-app-test.firebaseio.com",
+                            "namespace": "trading-app-test",
+                            "persistenceKey": "",
+                            "secure": true,
+                            "webSocketOnly": false,
+                          },
+                          "requestCBHash_": Object {},
+                          "requestNumber_": 0,
+                          "securityDebugCallback_": null,
+                          "visible_": true,
+                        },
+                        "statsListener_": null,
+                        "statsReporter_": StatsReporter {
+                          "server_": PersistentConnection {
+                            "authOverride_": undefined,
+                            "authTokenProvider_": AuthTokenProvider {
+                              "app_": [Circular],
+                            },
+                            "authToken_": null,
+                            "connected_": false,
+                            "establishConnectionTimer_": 2,
+                            "firstConnection_": true,
+                            "forceTokenRefresh_": false,
+                            "id": 0,
+                            "interruptReasons_": Object {},
+                            "invalidAuthTokenCount_": 0,
+                            "lastConnectionAttemptTime_": null,
+                            "lastConnectionEstablishedTime_": null,
+                            "lastSessionId": null,
+                            "listens_": Object {},
+                            "log_": [Function],
+                            "maxReconnectDelay_": 300000,
+                            "onConnectStatus_": [Function],
+                            "onDataUpdate_": [Function],
+                            "onDisconnectRequestQueue_": Array [],
+                            "onServerInfoUpdate_": [Function],
+                            "outstandingPutCount_": 0,
+                            "outstandingPuts_": Array [],
+                            "realtime_": null,
+                            "reconnectDelay_": 1000,
+                            "repoInfo_": RepoInfo {
+                              "domain": "firebaseio.com",
+                              "host": "trading-app-test.firebaseio.com",
+                              "internalHost": "trading-app-test.firebaseio.com",
+                              "namespace": "trading-app-test",
+                              "persistenceKey": "",
+                              "secure": true,
+                              "webSocketOnly": false,
+                            },
+                            "requestCBHash_": Object {},
+                            "requestNumber_": 0,
+                            "securityDebugCallback_": null,
+                            "visible_": true,
+                          },
+                          "statsListener_": StatsListener {
+                            "collection_": StatsCollection {
+                              "counters_": Object {},
+                            },
+                            "last_": null,
+                          },
+                          "statsToReport_": Object {},
+                        },
+                        "stats_": StatsCollection {
+                          "counters_": Object {},
+                        },
+                        "transactionQueueTree_": Tree {
+                          "name_": "",
+                          "node_": TreeNode {
+                            "childCount": 0,
+                            "children": Object {},
+                            "value": null,
+                          },
+                          "parent_": null,
+                        },
+                      },
+                      "root_": "https://trading-app-test.firebaseio.com/",
+                    },
+                  },
+                  "storage": Object {
+                    "[DEFAULT]": [Circular],
+                  },
+                },
+              },
+              "authWrapper_": [Circular],
+              "bucket_": Location {
+                "bucket": "trading-app-test.appspot.com",
+                "path_": "",
+              },
+              "internals_": ServiceInternals {
+                "service_": [Circular],
+              },
+            },
+            "storageRefMaker_": [Function],
+          },
+          "location": Location {
+            "bucket": "trading-app-test.appspot.com",
+            "path_": "images",
+          },
+        }
+      }
+    />
+  </label>
+  <p
+    className="form__error"
+  >
+    Please provide description and amount
+  </p>
+  <input
+    autoFocus={true}
+    className="text-input"
+    onChange={[Function]}
+    placeholder="What are you trading?"
+    type="text"
+    value=""
+  />
+  <input
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Price"
+    type="text"
+    value=""
+  />
+  <input
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Select Category"
+    type="text"
+    value=""
+  />
+  <input
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Location"
+    type="text"
+    value=""
+  />
+  <input
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Decription"
+    type="text"
+    value=""
+  />
+  <div>
+    <button
+      className="button"
+    >
+      Save Item
+    </button>
+  </div>
+</form>
+`;

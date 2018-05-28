@@ -16,15 +16,25 @@ exports[`should render header correctly 1`] = `
         to="/dashboard"
       >
         <h1>
-          Trading App
+          BarterBro
         </h1>
       </Link>
-      <button
-        className="button button--link"
-        onClick={[Function]}
+      <div
+        className="header__content"
       >
-        Logout
-      </button>
+        <img
+          className="image-profile"
+        />
+        <span
+          className="button button--link"
+        />
+        <button
+          className="button button--link"
+          onClick={[Function]}
+        >
+          SIGN-OUT
+        </button>
+      </div>
     </div>
   </div>
 </header>

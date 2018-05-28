@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render add item page correctly 1`] = `
+<div
+  className="content"
+>
+  <div
+    className="page-header"
+  >
+    <div
+      className="content-container"
+    >
+      <h1
+        className="page-header__title"
+      >
+        Add Item
+      </h1>
+    </div>
+  </div>
+  <div
+    className="content-container"
+  >
+    <ItemForm
+      onSubmit={[Function]}
+    />
+  </div>
+</div>
+`;

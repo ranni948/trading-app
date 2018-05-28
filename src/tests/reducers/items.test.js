@@ -17,7 +17,7 @@ test('should add an item', () => {
     };
 
     const action = {
-        type: 'ADD_EXPENSE',
+        type: 'ADD_ITEM',
         item
     };
     const state = itemsReducer(items, action);
